@@ -3,7 +3,7 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
     <Description about="urn:mozilla:install-manifest">
-        <em:name>Torbutton</em:name>
+        <em:name>JonDo-Browser</em:name>
         <em:creator>Mike Perry</em:creator>
         <em:id>torbutton@torproject.org</em:id>
         <em:version>1.9.5.13</em:version>

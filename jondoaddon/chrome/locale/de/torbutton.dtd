@@ -148,7 +148,7 @@
 <!ENTITY torbutton.prefs.block_disk "Browser-Verlauf und Internetdaten nicht speichern (aktiviert den privaten Browser-Modus)">
 <!ENTITY torbutton.prefs.restrict_thirdparty "Profildateien (Cookies) von Drittanbietern und andere Überwachungsdaten einschränken">
 <!ENTITY torbutton.prefs.block_plugins "Browser-Erweiterungen deaktivieren (wie z.B. Flash)">
-<!ENTITY torbutton.prefs.resist_fingerprinting "Details ändern, die Sie von anderen Tor-Browser-Benutzern unterscheiden">
+<!ENTITY torbutton.prefs.resist_fingerprinting "Details ändern, die Sie von anderen JonDo-Browser-Benutzern unterscheiden">
 <!ENTITY torbutton.prefs.sec_caption "Sicherheitslevel">
 <!ENTITY torbutton.prefs.sec_low "gering (Standard)">
 <!ENTITY torbutton.prefs.sec_low_usable_desc "Dies liefert die am meisten nutzbaren Erfahrungen.">
