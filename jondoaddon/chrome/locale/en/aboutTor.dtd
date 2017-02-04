@@ -16,9 +16,9 @@
 <!ENTITY aboutTor.success2.label "Connected to the Tor network.">
 <!ENTITY aboutTor.success3.label "You are now free to browse the Internet anonymously.">
 <!ENTITY aboutTor.failure.label "Something Went Wrong!">
-<!ENTITY aboutTor.failure2.label "Tor is not working in this browser.">
+<!ENTITY aboutTor.failure2.label "JonDo is not working in this browser.">
 <!ENTITY aboutTor.failure3prefix.label "For assistance, please contact ">
-<!ENTITY aboutTor.failure3Link "help@rt.torproject.org">
+<!ENTITY aboutTor.failure3Link "info@jondos.de">
 <!ENTITY aboutTor.failure3suffix.label ".">
 
 <!ENTITY aboutTor.search.label "Search">
@@ -37,13 +37,11 @@
 <!ENTITY aboutTor.whatnext.link "https://www.torproject.org/download/download.html.en#warning">
 <!ENTITY aboutTor.helpInfo1.label "You Can Help!">
 <!ENTITY aboutTor.helpInfo2.label "There are many ways you can help make the JonDo Network faster and stronger:">
-<!ENTITY aboutTor.helpInfo3.label "Run a Tor Relay Node »">
-<!ENTITY aboutTor.helpInfo3.link "https://www.torproject.org/docs/tor-doc-relay.html.en">
 <!ENTITY aboutTor.helpInfo4.label "Volunteer Your Services »">
-<!ENTITY aboutTor.helpInfo4.link "https://www.torproject.org/getinvolved/volunteer.html.en">
-<!ENTITY aboutTor.helpInfo5.label "Make a Donation »">
-<!ENTITY aboutTor.helpInfo5.link "https://www.torproject.org/donate/donate.html.en">
+<!ENTITY aboutTor.helpInfo4.link "https://www.anonym-surfen.de/support.html">
+<!ENTITY aboutTor.helpInfo5.label "Premium Service »">
+<!ENTITY aboutTor.helpInfo5.link "https://shop.anonymous-proxy-servers.net/bin/testcoupon?lang=de">
 
-<!ENTITY aboutTor.footer.label "The Tor Project is a US 501(c)(3) non-profit dedicated to the research, development, and education of online anonymity and privacy.">
+<!ENTITY aboutTor.footer.label "The JonDos GmbH was founded in 2007 as a spin off of a university research project. Main product is the in germany well known internet anonymisation system „JonDonym“. Meantime JonDos offers IT services in different areas of general software development and software integration.">
 <!ENTITY aboutTor.learnMore.label "Learn more about The JonDo Project »">
 <!ENTITY aboutTor.learnMore.link "https://anonymous-proxy-servers.net/en/jondofox.html">

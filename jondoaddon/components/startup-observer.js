@@ -116,8 +116,7 @@ StartupObserver.prototype = {
                  .getService(Components.interfaces.nsIEnvironment);
 
       if (environ.exists("TOR_SOCKS_PORT")) {
-        this._prefs.setIntPref('extensions.torbutton.socks_port',
-                parseInt(environ.get("TOR_SOCKS_PORT")));
+        this._prefs.setIntPref('extensions.torbutton.socks_port', parseInt(environ.get("TOR_SOCKS_PORT")));
         if (this.is_tbb) {
             this._prefs.setIntPref('network.proxy.socks_port', parseInt(environ.get("TOR_SOCKS_PORT")));
 

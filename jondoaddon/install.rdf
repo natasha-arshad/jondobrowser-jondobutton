@@ -3,11 +3,11 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
     <Description about="urn:mozilla:install-manifest">
-        <em:name>JonDo-Browser</em:name>
-        <em:creator>Mike Perry</em:creator>
+        <em:name>JonDoFox</em:name>
+        <em:creator>JonDos GmbH</em:creator>
         <em:id>torbutton@torproject.org</em:id>
-        <em:version>1.9.5.13</em:version>
-        <em:homepageURL>https://www.torproject.org/projects/torbrowser.html.en</em:homepageURL>
+        <em:version>1.9.5.13a</em:version>
+        <em:homepageURL>https://anonymous-proxy-servers.net/en/jondofox.html</em:homepageURL>
         <em:optionsURL>chrome://torbutton/content/preferences.xul</em:optionsURL>
         <em:iconURL>chrome://torbutton/skin/tor.png</em:iconURL>
         <em:updateURL>data:text/plain,</em:updateURL>
