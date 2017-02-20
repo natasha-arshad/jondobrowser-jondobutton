@@ -4,16 +4,16 @@
 cat Dockerfile | while read line ; do
 	case $line in
 		ENV*TBB_BRANCH*)
-			echo export TBB_BRANCH=${line##* }
+			export TBB_BRANCH=${line##* }
 			;;
 		ENV*TBB_TAG*)
-			echo export TBB_TAG=${line##* }
+			export TBB_TAG=${line##* }
 			;;
 		RUN*apt-get*)
-			echo eval ${line#* }
+			eval ${line#* }
 			;;
 		RUN*mkdir*)
-			echo eval ${line#* }
+			eval ${line#* }
 			;;
 	esac
 done
