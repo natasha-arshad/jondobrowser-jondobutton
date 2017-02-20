@@ -1,14 +1,10 @@
 #!/bin/bash
 
+export TBB_BRANCH
+export TBB_TAG
 
 cat Dockerfile | while read line ; do
 	case $line in
-		ENV*TBB_BRANCH*)
-			export TBB_BRANCH=${line##* }
-			;;
-		ENV*TBB_TAG*)
-			export TBB_TAG=${line##* }
-			;;
 		RUN*apt-get*)
 			eval ${line#* }
 			;;
@@ -18,4 +14,8 @@ cat Dockerfile | while read line ; do
 	esac
 done
 
-. ./tbb-build.sh
+TBB_BRANCH=$(grep TBB_BRANCH Dockerfile | cut -f 3 -d " ")
+TBB_TAG=$(grep TBB_TAG Dockerfile | cut -f 3 -d " ")
+
+. ./tbb-build.sh # $TBB_BRANCH $TBB_TAG
+
