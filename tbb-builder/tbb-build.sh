@@ -6,6 +6,7 @@ cd $(dirname $0)
 # The presence of a Dockerfile in the same directory as this script indicates that
 # we are not running in a container
 if [ -f Dockerfile ] ; then
+  INSIDE_DOCKER=true
 
   echo "Not running in a Docker container."
 
@@ -15,6 +16,9 @@ if [ -f Dockerfile ] ; then
   			eval ${line#* }
   			;;
   		RUN*mkdir*)
+  			eval ${line#* }
+  			;;
+  		RUN*echo*)
   			eval ${line#* }
   			;;
   	esac
@@ -39,4 +43,4 @@ cd gitian
 
 echo 'To build torbrowser, run "make TORSOCKS="'
 
-test -f Dockerfile || exec /bin/bash -l
+exec /bin/bash -l

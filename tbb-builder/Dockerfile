@@ -40,6 +40,10 @@ RUN apt-get update && apt-get install -y \
 	libglib2.0-dev
 
 RUN mkdir /var/src
+RUN echo "%sudo ALL=NOPASSWD: /usr/bin/lxc-start \
+%sudo ALL=NOPASSWD: /usr/bin/lxc-execute \
+%sudo ALL=NOPASSWD: /usr/bin/make \
+%sudo ALL=NOPASSWD: /usr/sbin/kvm-ok" > /etc/sudoers.d/gitian-lxc
 
 VOLUME /var/src
 
