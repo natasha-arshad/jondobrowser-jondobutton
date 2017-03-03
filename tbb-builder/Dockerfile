@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -y \
   unzip \
   subversion \
   debian-archive-keyring \
-  python-vm-builder \
+  python-pip \
   libyaml-perl \
   libfile-slurp-perl \
   libxml-writer-perl \
@@ -38,6 +38,8 @@ RUN apt-get update && apt-get install -y \
 	pkg-config \
 	libgtk2.0-dev \
 	libglib2.0-dev
+
+RUN pip install --upgrade pip && pip install VMBuilder
 
 RUN mkdir /var/src
 RUN echo "%sudo ALL=NOPASSWD: /usr/bin/lxc-start" > /etc/sudoers.d/gitian-lxc

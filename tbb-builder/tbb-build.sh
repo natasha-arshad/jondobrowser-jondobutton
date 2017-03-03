@@ -18,6 +18,9 @@ if [ -f Dockerfile ] ; then
   		RUN*mkdir*)
   			eval ${line#* }
   			;;
+      RUN*pip*)
+  			eval ${line#* }
+  			;;
   		RUN*echo*)
   			eval ${line#* }
   			;;
