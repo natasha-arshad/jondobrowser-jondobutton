@@ -23,6 +23,9 @@ test $(whoami) = root || sudo usermod -aG docker $(whoami)
 
 # install required packages
 apt-get install -y make libyaml-libyaml-perl libtemplate-perl libio-handle-util-perl libio-all-perl libio-captureoutput-perl libfile-slurp-perl libstring-shellquote-perl libsort-versions-perl libdigest-sha-perl libdata-uuid-perl libdata-dump-perl git
+cpan install File::Copy::Recursive
+
+wget https://cs.chromium.org/codesearch/f/chromium/src/build/install-build-deps.sh && chmod u+x install-build-deps.sh && ./install-build-deps.sh --no-prompt
 
 mkdir -p /var/src
 cd /var/src
