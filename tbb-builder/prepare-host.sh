@@ -28,7 +28,7 @@ apt-get install -y make libyaml-libyaml-perl libtemplate-perl libio-handle-util-
 cpan install File::Copy::Recursive
 
 # chromium dependencies
-wget https://cs.chromium.org/codesearch/f/chromium/src/build/install-build-deps.sh && chmod u+x install-build-deps.sh && ./install-build-deps.sh --no-prompt
+wget https://cs.chromium.org/codesearch/f/chromium/src/build/install-build-deps.sh && chmod u+x install-build-deps.sh && ./install-build-deps.sh --no-prompt --no-chromeos-fonts
 
 mkdir -p /var/src
 cd /var/src
