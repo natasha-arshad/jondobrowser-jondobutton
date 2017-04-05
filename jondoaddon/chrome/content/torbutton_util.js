@@ -99,6 +99,7 @@ function torbutton_reset_browser_prefs() {
 // check if the socks_remote_dns preference exists
 function torbutton_check_socks_remote_dns()
 {
+    
     var o_prefbranch = false;
 
     o_prefbranch = torbutton_get_prefbranch("network.proxy.");

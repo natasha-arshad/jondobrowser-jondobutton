@@ -14,12 +14,12 @@ pref("extensions.torbutton.hide_sync_ui", true);
 // proxy prefs
 pref("extensions.torbutton.settings_method",'recommended');
 pref("extensions.torbutton.use_privoxy",true);
-pref("extensions.torbutton.http_proxy","");
-pref("extensions.torbutton.http_port",0);
-pref("extensions.torbutton.https_proxy","");
-pref("extensions.torbutton.https_port",0);
-pref("extensions.torbutton.ftp_proxy","");
-pref("extensions.torbutton.ftp_port",0);
+pref("extensions.torbutton.http_proxy","127.0.0.1");
+pref("extensions.torbutton.http_port",4001);
+pref("extensions.torbutton.https_proxy","127.0.0.1");
+pref("extensions.torbutton.https_port",4001);
+pref("extensions.torbutton.ftp_proxy","127.0.0.1");
+pref("extensions.torbutton.ftp_port",4001);
 pref("extensions.torbutton.gopher_proxy","");
 pref("extensions.torbutton.gopher_port",0);
 pref("extensions.torbutton.socks_host","");
@@ -35,7 +35,7 @@ pref("extensions.torbutton.test_failed",false);
 pref("extensions.torbutton.no_proxies_on","");
 pref("extensions.torbutton.versioncheck_url","https://www.torproject.org/projects/torbrowser/RecommendedTBBVersions");
 pref("extensions.torbutton.versioncheck_enabled",true);
-pref("extensions.torbutton.use_nontor_proxy",false);
+pref("extensions.torbutton.use_nontor_proxy",true);
 
 // XXX: wtf prefs? These seem not actually connected, but govern
 // if user wants own tor proxy settings
@@ -225,3 +225,20 @@ pref("extensions.torbutton.window.maxWidth", 1000);
 
 // This pref specifies an ad-hoc "version" for various pref update hacks we need to do
 pref("extensions.torbutton.pref_fixup_version", 0);
+
+// Theese prefs set the about:preferences values
+pref("network.proxy.type", 1);
+pref("network.proxy.ssl", "127.0.0.1");
+pref("network.proxy.ssl_port", 4001);
+pref("network.proxy.socks", "127.0.0.1");
+pref("network.proxy.socks_port", 4001);
+pref("network.proxy.http", "127.0.0.1");
+pref("network.proxy.http_port", 4001);
+pref("network.proxy.ftp", "127.0.0.1");
+pref("network.proxy.ftp_port", 4001);
+pref("network.proxy.backup.ssl", "127.0.0.1");
+pref("network.proxy.backup.ssl_port", 4001);
+pref("network.proxy.backup.socks", "127.0.0.1");
+pref("network.proxy.backup.socks_port", 4001);
+pref("network.proxy.backup.ftp", "127.0.0.1");
+pref("network.proxy.backup.ftp_port", 4001);
