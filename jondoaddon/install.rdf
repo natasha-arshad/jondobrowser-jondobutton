@@ -5,7 +5,7 @@
     <Description about="urn:mozilla:install-manifest">
         <em:name>JonDoFox</em:name>
         <em:creator>JonDos GmbH</em:creator>
-        <em:id>torbutton@torproject.org</em:id>
+        <em:id>info@jondos.de</em:id>
         <em:version>1.9.5.13a</em:version>
         <em:homepageURL>https://anonymous-proxy-servers.net/en/jondofox.html</em:homepageURL>
         <em:optionsURL>chrome://torbutton/content/preferences.xul</em:optionsURL>
