@@ -800,7 +800,7 @@ function torbutton_init_prefs() {
                 proxy_port = 0;
             }
         }
-
+        /*
         if (torbutton_check_socks_remote_dns()) {
             torprefs.setCharPref('http_proxy', proxy_host);
             torprefs.setCharPref('https_proxy', proxy_host);
@@ -824,6 +824,7 @@ function torbutton_init_prefs() {
             torprefs.setIntPref('https_port', proxy_port);
             torprefs.setIntPref('ftp_port', proxy_port);
         }
+        */
     }
 
     torbutton_log(1, 'http_port='+torprefs.getIntPref('http_port'));

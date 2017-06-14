@@ -128,7 +128,8 @@ StartupObserver.prototype = {
         }
         this.logger.log(3, "Reset socks port to "+environ.get("TOR_SOCKS_PORT"));
       } else if (this._prefs.getCharPref('extensions.torbutton.settings_method') == 'recommended') {
-        this._prefs.setIntPref('extensions.torbutton.socks_port', 9150);
+        //this._prefs.setIntPref('extensions.torbutton.socks_port', 9150);
+        this._prefs.setIntPref('extensions.torbutton.socks_port', 0);
       }
 
       if (environ.exists("TOR_SOCKS_HOST")) {
@@ -137,7 +138,8 @@ StartupObserver.prototype = {
             this._prefs.setCharPref('network.proxy.socks', environ.get("TOR_SOCKS_HOST"));
         }
       } else if (this._prefs.getCharPref('extensions.torbutton.settings_method') == 'recommended') {
-        this._prefs.setCharPref('extensions.torbutton.socks_host', '127.0.0.1');
+        //this._prefs.setCharPref('extensions.torbutton.socks_host', '127.0.0.1');
+        this._prefs.setCharPref('extensions.torbutton.socks_host', '');
       }
 
       if (environ.exists("TOR_TRANSPROXY")) {

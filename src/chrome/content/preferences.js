@@ -40,7 +40,7 @@ function torbutton_prefs_set_field_attributes(doc)
             proxy_port = 0;
           }
         }
-
+        /*
         torbutton_log(2, "using recommended settings");
         if (!torbutton_check_socks_remote_dns()) {
             doc.getElementById('torbutton_httpProxy').value = proxy_host;
@@ -90,6 +90,7 @@ function torbutton_prefs_set_field_attributes(doc)
         doc.getElementById('torbutton_socksPort').disabled = true;
         doc.getElementById('torbutton_socksGroup').disabled = true;
         doc.getElementById('torbutton_noProxiesOn').disabled = true;
+        */
     } else if (doc.getElementById('torbutton_settingsMethod').value == 'transparent') {
         // Mr. Larry was so lazy when he wrote the rest of this code
         torbutton_log(2, "not using recommended settings");
