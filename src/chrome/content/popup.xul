@@ -16,35 +16,11 @@
          anchor="torbutton-button" position="after_start" >
     <hbox align="start">
       <vbox>
-        <menuitem id="torbutton-new-identity"
-                  label="&torbutton.context_menu.new_identity;"
-                  accesskey="&torbutton.context_menu.new_identity_key;"
-                  key="torbutton-new-identity-key"
-                  insertafter="context-stop"
-                  oncommand="torbutton_new_identity()"/>
-        <menuitem id="torbutton-new-circuit"
-                  label="&torbutton.context_menu.new_circuit;"
-                  accesskey="&torbutton.context_menu.new_circuit_key;"
-                  key="torbutton-new-circuit-key"
-                  insertafter="context-stop"
-                  oncommand="torbutton_new_circuit()"/>
-        <menuseparator/>
-        <menuitem id="torbutton-cookie-protector"
-                  label="&torbutton.context_menu.cookieProtections;"
-                  accesskey="&torbutton.context_menu.cookieProtections.key;"
-                  insertafter="context-stop"
-                  hidden="true"
-                  oncommand="torbutton_open_cookie_dialog()"/>
         <menuitem id="torbutton-preferences"
                   label="&torbutton.context_menu.preferences;"
                   accesskey="&torbutton.context_menu.preferences.key;"
                   insertafter="context-stop"
                   oncommand="torbutton_open_prefs_dialog()"/>
-        <menuitem id="torbutton-networksettings"
-                  label="&torbutton.context_menu.networksettings;"
-                  accesskey="&torbutton.context_menu.networksettings.key;"
-                  oncommand="torbutton_open_network_settings()"/>
-        <menuseparator/>
         <menuitem id="torbutton-checkForUpdate"
                   label="&torbutton.context_menu.downloadUpdate;"
                   accesskey="&torbutton.context_menu.downloadUpdate.key;"
