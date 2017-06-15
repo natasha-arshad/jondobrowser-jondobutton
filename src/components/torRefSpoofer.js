@@ -55,6 +55,16 @@ RefSpoofer.prototype = {
     } catch (ex) {
       this.logger.log(5, "RefSpoof onModifyRequest: " + ex);
     }
+    // stateless http connection code added
+    try{
+    
+      oHttpChannel.setRequestHeader("Proxy-Connection", "close", false);
+      oHttpChannel.setRequestHeader("Connection", "close", false);
+    
+    } catch (ex){
+      this.logger.log(5, "stateless http connection: " + ex);
+    }
+    
   },
   adjustRef: function(oChannel, sRef)
   {
