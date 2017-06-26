@@ -4,16 +4,16 @@
    - vim: set sw=2 sts=2 ts=8 et syntax=xml:
   -->
 
-<!ENTITY aboutTor.title "Über Tor">
+<!ENTITY aboutTor.title "Über JonDoFox">
 
 <!ENTITY aboutTor.outOfDateTorOn.label "WARNUNG: Dieser Browser ist nicht mehr aktuell!">
 <!ENTITY aboutTor.outOfDateTorOff.label "AUSSERDEM, dieser Browser ist nicht aktuell.">
-<!ENTITY aboutTor.outOfDate2.label "Klicken Sie auf die Zwiebel und wählen Sie dann Suche nach Tor-Browser-Aktualisierung.">
+<!ENTITY aboutTor.outOfDate2.label "Klicken Sie auf die Zwiebel und wählen Sie dann Suche nach JonDoBrowser-Aktualisierung.">
 
 <!ENTITY aboutTor.check.label "JonDo-Netzwerkeinstellungen testen">
 
 <!ENTITY aboutTor.success.label "Willkommen im JonDo-Browser">
-<!ENTITY aboutTor.success2.label "Mit dem Tor-Netzwerk verbunden.">
+<!ENTITY aboutTor.success2.label "Mit dem JonDo-Netzwerk verbunden.">
 <!ENTITY aboutTor.success3.label "Sie können jetzt anonym im Internet surfen.">
 <!ENTITY aboutTor.failure.label "Irgend etwas lief schief!">
 <!ENTITY aboutTor.failure2.label "JonDo funktioniert mit diesem Browser nicht.">
