@@ -17,15 +17,10 @@
 <!ENTITY aboutTor.success3.label "You are now free to browse the Internet anonymously.">
 <!ENTITY aboutTor.failure.label "Something Went Wrong!">
 <!ENTITY aboutTor.failure2.label "JonDo is not working in this browser.">
-<!ENTITY aboutTor.failure3prefix.label "For assistance, please contact ">
-<!ENTITY aboutTor.failure3Link "info@jondos.de">
-<!ENTITY aboutTor.failure3suffix.label ".">
 
 <!ENTITY aboutTor.search.label "Search">
 
-<!ENTITY aboutTor.searchSPPost.link "https://startpage.com/rth/search">
-<!ENTITY aboutTor.searchDDGPost.link "https://duckduckgo.com/html/">
-<!ENTITY aboutTor.searchDCPost.link "https://search.disconnect.me/searchTerms/search?ses=Google&amp;location_option=US&amp;source=tor">
+<!ENTITY aboutTor.searchDDGPost.link "https://duckduckgo.com">
 
 <!ENTITY aboutTor.torInfo1.label "Additional Info:">
 <!ENTITY aboutTor.torInfo2.label "Country &amp; IP Address:">
@@ -34,9 +29,13 @@
 <!ENTITY aboutTor.whatnextQuestion.label "What Next?">
 <!ENTITY aboutTor.whatnextAnswer.label "JonDo is NOT all you need to browse anonymously! You may need to change some of your browsing habits to ensure your identity stays safe.">
 <!ENTITY aboutTor.whatnext.label "Tips On Staying Anonymous »">
-<!ENTITY aboutTor.whatnext.link "https://www.torproject.org/download/download.html.en#warning">
+<!ENTITY aboutTor.whatnext.link "https://anonymous-proxy-servers.net/en/jondofox.html">
+<!ENTITY aboutTor.torbrowser_user_manual.accesskey "M">
+<!ENTITY aboutTor.torbrowser_user_manual.label "JonDo Browser User Manual">
 <!ENTITY aboutTor.helpInfo1.label "You Can Help!">
 <!ENTITY aboutTor.helpInfo2.label "There are many ways you can help make the JonDo Network faster and stronger:">
+<!ENTITY aboutTor.helpInfo3.label "Run a JonDo Relay Node »">
+<!ENTITY aboutTor.helpInfo3.link "https://anonymous-proxy-servers.net/en/jondofox.html">
 <!ENTITY aboutTor.helpInfo4.label "Volunteer Your Services »">
 <!ENTITY aboutTor.helpInfo4.link "https://www.anonym-surfen.de/support.html">
 <!ENTITY aboutTor.helpInfo5.label "Premium Service »">

@@ -6,7 +6,8 @@
         <em:name>JonDoFox</em:name>
         <em:creator>JonDos GmbH</em:creator>
         <em:id>info@jondos.de</em:id>
-        <em:version>1.9.5.13a</em:version>
+        <em:version>1.9.7.4a</em:version>
+	<em:multiprocessCompatible>true</em:multiprocessCompatible>
         <em:homepageURL>https://anonymous-proxy-servers.net/en/jondofox.html</em:homepageURL>
         <em:optionsURL>chrome://torbutton/content/preferences.xul</em:optionsURL>
         <em:iconURL>chrome://torbutton/skin/tor.png</em:iconURL>

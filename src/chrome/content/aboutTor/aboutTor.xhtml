@@ -21,13 +21,16 @@
   <title>&aboutTor.title;</title>
   <link rel="stylesheet" type="text/css" media="all"
         href="chrome://torbutton/skin/aboutTor.css"/>
-  <link rel="stylesheet" type="text/css" media="all"
-        href="chrome://torbutton/skin/donation_banner.css"/>
 <script type="text/javascript;version=1.7">
  <![CDATA[
+Components.utils.import("resource://gre/modules/Services.jsm");
+
 function onLoad()
 {
   insertPropertyStrings();
+
+  let locale = Services.prefs.getCharPref("general.useragent.locale");
+  document.getElementById("manualLink").href = "https://tb-manual.torproject.org/" + locale;
 
   document.addEventListener("AboutTorAdjustArrow", function() {
     adjustToolbarIconArrow();
@@ -143,11 +146,10 @@ function insertPropertyStrings()
   try {
     let kPropertiesURL = "chrome://torbutton/locale/aboutTor.properties";
 
-    Components.utils.import("resource://gre/modules/Services.jsm");
     let gStringBundle = Services.strings.createBundle(kPropertiesURL);
-    let s1 = gStringBundle.GetStringFromName("aboutTor.searchDC.privacy.link");
-    let s2 = gStringBundle.GetStringFromName("aboutTor.searchDC.search.link");
-    let result = gStringBundle.formatStringFromName("aboutTor.searchDC.privacy",
+    let s1 = gStringBundle.GetStringFromName("aboutTor.searchDDG.privacy.link");
+    let s2 = gStringBundle.GetStringFromName("aboutTor.searchDDG.search.link");
+    let result = gStringBundle.formatStringFromName("aboutTor.searchDDG.privacy",
                   [s1, s2], 2);
     if (result) {
       let elem = document.getElementById("searchProviderInfo");
@@ -166,29 +168,6 @@ window.addEventListener("pageshow", function() {
 </script>
 </head>
 <body dir="&locale.dir;" onload="onLoad();">
-  <div id="banner" class="onions-bg">
-    <div id="banner-contents-container">
-      <div id="banner-logo-container">
-        <img id="banner-logo" alt="Tor Onion-Heart Logo"
-             src="chrome://torbutton/content/aboutTor/onion-heart.svg"/>
-      </div>
-      <div id="banner-text">
-        <div id="banner-tagline"><span></span></div>
-        <div id="banner-heart"><span></span></div>
-      </div>
-      <a id="banner-donate-button-link"
-         href="https://www.torproject.org/donate/donate-tbb">
-        <div id="banner-donate-button-container">
-          <div id="banner-donate-button">
-            <div id="banner-donate-button-text">
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div id="banner-spacer"></div>
 <div id="torstatus" class="top">
   <div id="torstatus-version"/>
   <div id="torstatus-image"/>
@@ -205,9 +184,6 @@ window.addEventListener("pageshow", function() {
     <h1>&aboutTor.failure.label;</h1>
     <br/>
     <h2>&aboutTor.failure2.label;</h2>
-    <br/>
-    <h3>&aboutTor.failure3prefix.label;<a href="mailto:&aboutTor.failure3Link;"
->&aboutTor.failure3Link;</a>&aboutTor.failure3suffix.label;</h3>
   </div>
 </div>
 <div class="top">
@@ -224,7 +200,7 @@ window.addEventListener("pageshow", function() {
 </div>
 
 <div class="searchbox hideIfTorOff"> <!-- begin form based search -->
-  <form action="&aboutTor.searchDCPost.link;" method="post">
+  <form action="&aboutTor.searchDDGPost.link;" method="post">
   <div id="sxw">
     <div id="sbutton">
       <input name="b" id="sb" value="" title="&aboutTor.search.label;"
@@ -243,13 +219,25 @@ window.addEventListener("pageshow", function() {
     <div class="bubble">
       <h1>&aboutTor.whatnextQuestion.label;</h1>
       <p>&aboutTor.whatnextAnswer.label;</p>
-      <a class="tips" href="&aboutTor.whatnext.link;">&aboutTor.whatnext.label;</a>
+      <ul>
+        <li>
+          <a href="&aboutTor.whatnext.link;">
+            &aboutTor.whatnext.label;
+          </a>
+        </li>
+        <li class="showForManual">
+          <a id="manualLink">
+            &aboutTor.torbrowser_user_manual.label; &raquo;
+          </a>
+        </li>
+      </ul>
     </div>
 
     <div class="bubble">
       <h1>&aboutTor.helpInfo1.label;</h1>
       <p>&aboutTor.helpInfo2.label;</p>
       <ul>
+
         <li><a href="&aboutTor.helpInfo4.link;">&aboutTor.helpInfo4.label;</a></li>
         <li><a href="&aboutTor.helpInfo5.link;">&aboutTor.helpInfo5.label;</a></li>
       </ul>
@@ -261,6 +249,6 @@ window.addEventListener("pageshow", function() {
   <p>&aboutTor.footer.label;
 <a href="&aboutTor.learnMore.link;">&aboutTor.learnMore.label;</a></p>
 </div>
-  <script src="chrome://torbutton/content/aboutTor/donation_banner.js"></script>
+
 </body>
 </html>

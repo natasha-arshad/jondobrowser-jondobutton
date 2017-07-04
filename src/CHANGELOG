@@ -1,13 +1,106 @@
+1.9.7.4
+ * Bug 22542: Security Settings window too small on macOS 10.12
+
+1.9.7.3
+ * Bug 22104: Adjust our content policy whitelist for ff52-esr
+ * Bug 22457: Allow resources loaded by view-source://
+ * Bug 21627: Ignore HTTP 304 responses when checking redirects
+ * Bug 22459: Adapt our use of the nsIContentPolicy to e10s mode
+ * Translations update
+
+1.9.7.2
+ * Bug 21865: Update our JIT preferences in the security slider
+ * Bug 21747: Make 'New Tor Circuit for this Site' work in ESR52
+ * Bug 21745: Fix handling of catch-all circuit
+ * Bug 21547: Fix circuit display under e10s
+ * Bug 21268: e10s compatibility for New Identity
+ * Bug 21267: Remove window resize implementation for now
+ * Bug 21201: Make Torbutton multiprocess compatible
+ * Translation updates
+
+1.9.7.1
+ * Bug 21396: Allow leaking of resource/chrome URIs (off by default)
+ * Bug 21574: Add link for zh manual and create manual links dynamically
+ * Bug 21330: Non-usable scrollbar appears in tor browser security settings
+ * Bug 21324: Don't update NoScript button with timer update
+ * Translation updates
+
+1.9.7
+ * Bug 19898: Use DuckDuckGo on about:tor
+ * Bug 21091: Hide the update check menu entry when running under the sandbox
+ * Bug 21243: Add links to es, fr, and pt Tor Browser manual
+ * Bug 21194: Show snowflake in the circuit display
+ * Bug 21131: Remove 2016 donation banner
+ * Translation updates
+
+1.9.6.12
+ * Bug 20951: Back out Unix domain socket related patches for Tor Browser 6.5
+ * Bug 19898: Use DuckDuckGo on about:tor
+ * Bug 21243: Add links to es, fr, and pt Tor Browser manual
+ * Bug 21091: Hide the update check menu entry when running under the sandbox
+ * Bug 21131: Remove 2016 donation banner
+ * Bug 14429: Make sure the automatic resizing is disabled
+ * Translation updates
+
+1.9.6.9
+ * Bug 20947: Donation banner improvements
+
 1.9.5.13
  * Bug 20947: Donation banner improvements
+
+1.9.6.8
+ * Bug 16622: Timezone spoofing moved to tor-browser.git
+ * Bug 20701: Allow the directory listing stylesheet in the content policy
+ * Bug 20556: Use pt-BR strings from now on
+ * Bug 20614: Add links to Tor Browser User Manual
+ * Bug 20414: Fix non-rendering arrow on OS X
+ * Bug 20728: Fix bad preferences.xul dimensions
+ * Bug 20318: Remove helpdesk link from about:tor
+ * Bug 20753: Remove obsolete StartPage locale strings
+ * Translation updates
+
+1.9.6.7
+ * Bug 20414: Add donation banner on about:tor for 2016 campaign
+ * Bug 20111: use Unix domain sockets for SOCKS port by default
+ * Bug 19459: Move resizing code to tor-browser.git
+ * Bug 20264: Change security slider to 3 options
+ * Bug 20347: Enhance security slider's custom mode
+ * Bug 20123: Disable remote jar on all security levels
+ * Bug 20244: Move privacy checkboxes to about:preferences#privacy
+ * Bug 17546: Add tooltips to explain our privacy checkboxes
+ * Bug 17904: Allow security settings dialog to resize
+ * Bug 18093: Remove 'Restore Defaults' button
+ * Bug 20373: Prevent redundant dialogs opening
+ * Bug 20388+20399+20394: Code clean-up
+ * Translation updates
 
 1.9.5.12
  * Bug 20414: Add donation banner on about:tor for 2016 campaign
  * Translation updates
 
+1.9.6.4
+ * Bug 17334: Move referrer spoofing for .onion domains into tor-browser.git
+ * Bug 17767: Make "JavaScript disabled" more visible in Security Slider
+
+1.9.6.2
+ * Bug 18589: Clear site security settings during New Identity
+ * Bug 19906: "Maximizing Tor Browser" Notification can exist multiple times
+ * Bug 19837: Whitelist internal URLs that Firefox requires for media
+ * Bug 15852: Remove/synchronize Torbutton SOCKS pref logic
+ * Bug 19733: GETINFO response parser doesn't handle AF_UNIX entries + IPv6
+ * Bug 14271: Make Torbutton work with Unix Domain Socket option
+ * Translation updates
+
 1.9.5.7
  * Bug 18589: Clear site security settings during New Identity
  * Bug 19906: "Maximizing Tor Browser" Notification can exist multiple times
+
+1.9.6.1
+ * Bug 19206: Avoid SOCKS auth and NEWNYM collisions when sharing a tor client
+ * Bug 19417: Disable asm.js (but add code to clear on New Identity if enabled)
+ * Bug 19689: Plugin usage prompt is parented to wrong window
+ * Bug 19273: Improve external app launch handling and associated warnings
+ * Bug 8725: Block addon resource and url fingerprinting with nsIContentPolicy
 
 1.9.5.6
  * Bug 19417: Disable asmjs for now
@@ -15,6 +108,15 @@
 
 1.9.5.5
  * Bug 19417: Clear asmjscache
+
+1.9.6
+ * Bug 18743: Pref to hide 'Sign in to Sync' button in hamburger menu
+ * Bug 18905: Hide unusable items from help menu
+ * Bug 17599: Provide shortcuts for New Identity and New Circuit
+ * Bug 18980: Remove obsolete toolbar button code
+ * Bug 18238: Remove unused Torbutton code and strings
+ * Translation updates
+ * Code clean-up
 
 1.9.5.4
  * Bug 18466: Make Torbutton compatible with Firefox ESR 45

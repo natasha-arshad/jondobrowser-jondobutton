@@ -6,7 +6,7 @@
 // call earlier functions). The code file can be processed
 // with docco.js to provide clear documentation.
 
-/* jshint moz: true */
+/* jshint esversion: 6 */
 /* global Components, console, XPCOMUtils */
 
 // ### Abbreviations
@@ -15,6 +15,9 @@ const Cc = Components.classes, Ci = Components.interfaces, Cu = Components.utils
 // Make the logger available.
 let logger = Cc["@torproject.org/torbutton-logger;1"]
                .getService(Components.interfaces.nsISupports).wrappedJSObject;
+
+// Import crypto object (FF 37+).
+Cu.importGlobalProperties(["crypto"]);
 
 // ## mozilla namespace.
 // Useful functionality for interacting with Mozilla services.
@@ -25,11 +28,6 @@ let mozilla = {};
 // by the browser.
 mozilla.protocolProxyService = Cc["@mozilla.org/network/protocol-proxy-service;1"]
                                  .getService(Ci.nsIProtocolProxyService);
-
-// __mozilla.thirdPartyUtil__.
-// Mozilla's Thirdy Party Utilities, for figuring out first party domain.
-mozilla.thirdPartyUtil = Cc["@mozilla.org/thirdpartyutil;1"]
-                           .getService(Ci.mozIThirdPartyUtil);
 
 // __mozilla.registerProxyChannelFilter(filterFunction, positionIndex)__.
 // Registers a proxy channel filter with the Mozilla Protocol Proxy Service,
@@ -69,7 +67,7 @@ tor.socksProxyCredentials = function (originalProxy, domain) {
   // Check if we already have a nonce. If not, create
   // one for this domain.
   if (!tor.noncesForDomains.hasOwnProperty(domain)) {
-    tor.noncesForDomains[domain] = 0;
+    tor.noncesForDomains[domain] = tor.nonce();
   }
   let proxy = originalProxy.QueryInterface(Ci.nsIProxyInfo);
   return mozilla.protocolProxyService
@@ -77,22 +75,50 @@ tor.socksProxyCredentials = function (originalProxy, domain) {
                           proxy.host,
                           proxy.port,
                           domain, // username
-                          tor.noncesForDomains[domain].toString(), // password
+                          tor.noncesForDomains[domain], // password
                           proxy.flags,
                           proxy.failoverTimeout,
                           proxy.failoverProxy);
 };
 
-tor.newCircuitForDomain = function(domain) {
-  // Check if we already have a nonce. If not, create
-  // one for this domain.
-  if (!tor.noncesForDomains.hasOwnProperty(domain)) {
-    tor.noncesForDomains[domain] = 0;
-  } else {
-    tor.noncesForDomains[domain] += 1;
+tor.nonce = function() {
+  // Generate a new 128 bit random tag.  Strictly speaking both using a
+  // cryptographic entropy source and using 128 bits of entropy for the
+  // tag are likely overkill, as correct behavior only depends on how
+  // unlikely it is for there to be a collision.
+  let tag = new Uint8Array(16);
+  crypto.getRandomValues(tag);
+
+  // Convert the tag to a hex string.
+  let tagStr = "";
+  for (let i = 0; i < tag.length; i++) {
+    tagStr += (tag[i] >>> 4).toString(16);
+    tagStr += (tag[i] & 0x0F).toString(16);
   }
-  logger.eclog(3, "New domain isolation count " +tor.noncesForDomains[domain] + " for " + domain);
-}
+
+  return tagStr;
+};
+
+tor.newCircuitForDomain = function(domain) {
+  // Re-generate the nonce for the domain.
+  if (domain === "") {
+    domain = "--unknown--";
+  }
+  tor.noncesForDomains[domain] = tor.nonce();
+  logger.eclog(3, "New domain isolation for " + domain + ": " + tor.noncesForDomains[domain]);
+};
+
+// __tor.clearIsolation()_.
+// Clear the isolation state cache, forcing new circuits to be used for all
+// subsequent requests.
+tor.clearIsolation = function () {
+  // Per-domain nonces are stored in a map, so simply re-initialize the map.
+  tor.noncesForDomains = {};
+
+  // Force a rotation on the next catch-all circuit use by setting the creation
+  // time to the epoch.
+  tor.unknownDirtySince = 0;
+};
 
 // __tor.isolateCircuitsByDomain()__.
 // For every HTTPChannel, replaces the default SOCKS proxy with one that authenticates
@@ -101,32 +127,27 @@ tor.newCircuitForDomain = function(domain) {
 // combination.
 tor.isolateCircuitsByDomain = function () {
   mozilla.registerProxyChannelFilter(function (aChannel, aProxy) {
-    if (!tor.isolationEnabled)
+    if (!tor.isolationEnabled) {
       return aProxy;
-
+    }
     try {
       let channel = aChannel.QueryInterface(Ci.nsIChannel),
-          firstPartyURI = mozilla.thirdPartyUtil.getFirstPartyURIFromChannel(channel, true)
-                            .QueryInterface(Ci.nsIURI),
-          firstPartyDomain = mozilla.thirdPartyUtil
-                               .getFirstPartyHostForIsolation(firstPartyURI),
           proxy = aProxy.QueryInterface(Ci.nsIProxyInfo),
-          replacementProxy = tor.socksProxyCredentials(aProxy, firstPartyDomain);
-      logger.eclog(3, "tor SOCKS: " + channel.URI.spec + " via " +
-                      replacementProxy.username + ":" + replacementProxy.password);
-      return replacementProxy;
-    } catch (err) {
-      logger.eclog(3, err.message);
-      if (Date.now() - tor.unknownDirtySince > 1000*10*60) {
-        logger.eclog(3, "tor catchall circuit has been dirty for over 10 minutes. Rotating.");
-        tor.newCircuitForDomain("--unknown--");
-        tor.unknownDirtySince = Date.now();
+          firstPartyDomain = channel.loadInfo.originAttributes.firstPartyDomain;
+      if (firstPartyDomain === "") {
+        firstPartyDomain = "--unknown--";
+        if (Date.now() - tor.unknownDirtySince > 1000*10*60) {
+          logger.eclog(3, "tor catchall circuit has been dirty for over 10 minutes. Rotating.");
+          tor.newCircuitForDomain("--unknown--");
+          tor.unknownDirtySince = Date.now();
+        }
       }
-      let replacementProxy = tor.socksProxyCredentials(aProxy, "--unknown--");
-
-      logger.eclog(3, "tor SOCKS isolation catchall: " + aChannel.URI.spec + " via " +
-                      replacementProxy.username + ":" + replacementProxy.password);
+      let replacementProxy = tor.socksProxyCredentials(aProxy, firstPartyDomain);
+      logger.eclog(3, `tor SOCKS: ${channel.URI.spec} via
+                       ${replacementProxy.username}:${replacementProxy.password}`);
       return replacementProxy;
+    } catch (e) {
+      logger.eclog(4, `tor domain isolator error: ${e.message}`);
     }
   }, 0);
 };
@@ -172,6 +193,10 @@ DomainIsolator.prototype = {
 
   disableIsolation: function() {
     tor.isolationEnabled = false;
+  },
+
+  clearIsolation: function() {
+    tor.clearIsolation();
   },
 
   wrappedJSObject: null

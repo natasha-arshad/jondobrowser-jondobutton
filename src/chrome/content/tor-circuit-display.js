@@ -5,9 +5,10 @@
 // call earlier functions). The file can be processed
 // with docco.js to produce pretty documentation.
 //
-// This script is to be embedded in torbutton.xul. It defines a single global function,
-// runTorCircuitDisplay(host, port, password), which activates the automatic Tor
-// circuit display for the current tab and any future tabs.
+// This script is to be embedded in torbutton.xul. It defines a single global
+// function, createTorCircuitDisplay(ipcFile, host, port, password), which
+// activates the automatic Tor circuit display for the current tab and any
+// future tabs.
 //
 // See https://trac.torproject.org/8641
 
@@ -15,25 +16,25 @@
 /* global document, gBrowser, Components */
 
 // ### Main function
-// __createTorCircuitDisplay(host, port, password, enablePrefName)__.
+// __createTorCircuitDisplay(ipcFile, host, port, password, enablePrefName)__.
 // The single function that prepares tor circuit display. Connects to a tor
-// control port with the given host, port, and password, and binds to
-// a named bool pref whose value determines whether the circuit display
+// control port with the given ipcFile or host plus port, and password, and
+// binds to a named bool pref whose value determines whether the circuit display
 // is enabled or disabled.
 let createTorCircuitDisplay = (function () {
 
 "use strict";
 
 // Mozilla utilities
-const Cu = Components.utils;
+const { Cu : utils , Ci : interfaces } = Components.utils;
 Cu.import("resource://gre/modules/Services.jsm");
 Cu.import("resource://gre/modules/Task.jsm");
 
 // Import the controller code.
-let { controller } = Cu.import("resource://torbutton/modules/tor-control-port.js");
+let { controller } = Cu.import("resource://torbutton/modules/tor-control-port.js", {});
 
 // Utility functions
-let { bindPrefAndInit } = Cu.import("resource://torbutton/modules/utils.js");
+let { bindPrefAndInit, observe } = Cu.import("resource://torbutton/modules/utils.js", {});
 
 // Make the TorButton logger available.
 let logger = Cc["@torproject.org/torbutton-logger;1"]
@@ -46,7 +47,10 @@ let logger = Cc["@torproject.org/torbutton-logger;1"]
 let credentialsToNodeDataMap = {},
     // A mutable map that reports `true` for IDs of "mature" circuits
     // (those that have conveyed a stream).
-    knownCircuitIDs = {};
+    knownCircuitIDs = {},
+    // A mutable map that records the SOCKS credentials for the
+    // latest channels for each browser.
+    browserToCredentialsMap = new Map();
 
 // __trimQuotes(s)__.
 // Removes quotation marks around a quoted string.
@@ -153,6 +157,42 @@ let collectIsolationData = function (aController, updateUI) {
     }).then(null, Cu.reportError));
 };
 
+// __browserForChannel(channel)__.
+// Returns the browser that loaded a given channel.
+let browserForChannel = function (channel) {
+  if (!channel) return null;
+  let chan = channel.QueryInterface(Ci.nsIChannel);
+  let callbacks = chan.notificationCallbacks;
+  if (!callbacks) return null;
+  let loadContext;
+  try {
+    loadContext = callbacks.getInterface(Ci.nsILoadContext);
+  } catch (e) {
+    // Ignore
+    return null;
+  }
+  if (!loadContext) return null;
+  return loadContext.topFrameElement;
+};
+
+// __collectBrowserCredentials()__.
+// Starts observing http channels. Each channel's proxyInfo
+// username and password is recorded for the channel's browser.
+let collectBrowserCredentials = function () {
+  return observe("http-on-modify-request", chan => {
+    try {
+      let proxyInfo = chan.QueryInterface(Ci.nsIProxiedChannel).proxyInfo;
+      let browser = browserForChannel(chan);
+      if (browser && proxyInfo) {
+          browserToCredentialsMap.set(browser, [proxyInfo.username,
+                                                proxyInfo.password]);
+      }
+    } catch (e) {
+      logger.eclog(3, `Error collecting browser credentials: ${e.message}, ${chan.URI.spec}`);
+    }
+  });
+};
+
 // ## User interface
 
 // __torbuttonBundle__.
@@ -220,24 +260,6 @@ let nodeLines = function (nodeData) {
   return result;
 };
 
-// __getSOCKSCredentials(browser)__.
-// Reads the SOCKS credentials for the corresponding browser object.
-let getSOCKSCredentialsForBrowser = function (browser) {
-  if (browser === null) return null;
-  let docShell = browser.docShell;
-  if (docShell === null) return null;
-  let channel = docShell.currentDocumentChannel;
-  if (channel === null) return null;
-  if (channel instanceof Ci.nsIMultiPartChannel) {
-    channel = channel.baseChannel;
-  }
-  if (channel === null) return null;
-  if (!(channel instanceof Ci.nsIProxiedChannel)) return null;
-  let proxyInfo = channel.proxyInfo;
-  if (proxyInfo === null) return null;
-  return [proxyInfo.username, proxyInfo.password];
-};
-
 // __onionSiteRelayLine__.
 // When we have an onion site, we simply show the word '(relay)'.
 let onionSiteRelayLine = "<li class='relay'>(" + uiString("relay") + ")</li>";
@@ -248,7 +270,7 @@ let onionSiteRelayLine = "<li class='relay'>(" + uiString("relay") + ")</li>";
 let updateCircuitDisplay = function () {
   let selectedBrowser = gBrowser.selectedBrowser;
   if (selectedBrowser) {
-    let credentials = getSOCKSCredentialsForBrowser(selectedBrowser),
+    let credentials = browserToCredentialsMap.get(selectedBrowser),
         nodeData = null;
     if (credentials) {
       let [SOCKS_username, SOCKS_password] = credentials;
@@ -311,25 +333,30 @@ let syncDisplayWithSelectedTab = (function() {
 
 // ## Main function
 
-// __setupDisplay(host, port, password, enablePrefName)__.
+// __setupDisplay(ipcFile, host, port, password, enablePrefName)__.
 // Once called, the Tor circuit display will be started whenever
 // the "enablePref" is set to true, and stopped when it is set to false.
 // A reference to this function (called createTorCircuitDisplay) is exported as a global.
-let setupDisplay = function (host, port, password, enablePrefName) {
+let setupDisplay = function (ipcFile, host, port, password, enablePrefName) {
   let myController = null,
       stopCollectingIsolationData = null,
+      stopCollectingBrowserCredentials = null,
       stop = function() {
         syncDisplayWithSelectedTab(false);
         if (myController) {
           if (stopCollectingIsolationData) {
 	    stopCollectingIsolationData();
           }
+          if (stopCollectingBrowserCredentials) {
+            stopCollectingBrowserCredentials();
+          }
           myController = null;
         }
       },
       start = function () {
         if (!myController) {
-          myController = controller(host, port || 9151, password, function (err) {
+          myController = controller(ipcFile, host, port || 9151, password,
+                function (err) {
             // An error has occurred.
             logger.eclog(5, err);
             logger.eclog(5, "Disabling tor display circuit because of an error.");
@@ -338,6 +365,7 @@ let setupDisplay = function (host, port, password, enablePrefName) {
           });
           syncDisplayWithSelectedTab(true);
           stopCollectingIsolationData = collectIsolationData(myController, updateCircuitDisplay);
+          stopCollectingBrowserCredentials = collectBrowserCredentials();
        }
      };
   try {
