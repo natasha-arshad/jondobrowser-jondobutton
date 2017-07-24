@@ -8,7 +8,7 @@
 
 <!ENTITY aboutTor.outOfDateTorOn.label "WARNUNG: Dieser Browser ist nicht mehr aktuell!">
 <!ENTITY aboutTor.outOfDateTorOff.label "AUSSERDEM, dieser Browser ist nicht aktuell.">
-<!ENTITY aboutTor.outOfDate2.label "Klicken Sie auf die Zwiebel und wählen Sie dann Suche nach JonDoBrowser-Aktualisierung.">
+<!ENTITY aboutTor.outOfDate2.label "Klicken Sie auf den Globus und wählen Sie dann Suche nach JonDoBrowser-Aktualisierung.">
 
 <!ENTITY aboutTor.check.label "JonDo-Netzwerkeinstellungen testen">
 
@@ -28,18 +28,19 @@
 <!ENTITY aboutTor.whatnextQuestion.label "Was nun?">
 <!ENTITY aboutTor.whatnextAnswer.label "JonDo ist NICHT alles was benötigt wird, um anonym zu surfen! Sie müssen eventuell einige Gewohnheiten ändern, um sicherzustellen, dass Ihre Identität geschützt bleibt.">
 <!ENTITY aboutTor.whatnext.label "Tipps, um anonym zu bleiben »">
-<!ENTITY aboutTor.whatnext.link "https://www.anonym-surfen.de/jondofox.html">
+<!ENTITY aboutTor.whatnext.link "https://www.anonym-surfen.de/help/index.html">
 <!ENTITY aboutTor.torbrowser_user_manual.accesskey "M">
 <!ENTITY aboutTor.torbrowser_user_manual.label "JonDo-Browser-Benutzerhandbuch">
 <!ENTITY aboutTor.helpInfo1.label "Sie können helfen!">
-<!ENTITY aboutTor.helpInfo2.label "Es gibt viele Möglichkeiten, um das JonDo-Netzwerk schneller und stärker zu machen:">
-<!ENTITY aboutTor.helpInfo3.label "Einen JonDo-Relaisknoten betreiben »">
-<!ENTITY aboutTor.helpInfo3.link "https://www.torproject.org/docs/tor-doc-relay.html.en">
-<!ENTITY aboutTor.helpInfo4.label "Ihre Dienste bereitstellen »">
-<!ENTITY aboutTor.helpInfo4.link "https://www.anonym-surfen.de/support.html">
-<!ENTITY aboutTor.helpInfo5.label "Etwas spenden »">
-<!ENTITY aboutTor.helpInfo5.link "https://shop.anonymous-proxy-servers.net/bin/testcoupon?lang=de">
+<!ENTITY aboutTor.helpInfo2.label "JonDoBrowser ist gratis, jedoch können Sie die Entwicklung unterstützen:">
+<!ENTITY aboutTor.helpInfo3.label "Testen Sie Premium gratis »">
+<!ENTITY aboutTor.helpInfo3.link "https://shop.anonymous-proxy-servers.net/bin/testcoupon?lang=de">
+<!ENTITY aboutTor.helpInfo4.label "Kaufen Sie Premium »">
+<!ENTITY aboutTor.helpInfo4.link "https://shop.anonymous-proxy-servers.net/bin/payment?lang=de">
+<!ENTITY aboutTor.helpInfo5.label "Kooperieren Sie mit uns, z.B. wenn Sie selbst Proxy- oder VPN-Dienste anbieten »">
+<!ENTITY aboutTor.helpInfo5.link "https://anonymous-proxy-servers.net/bin/contact?lang=de">
+
 
 <!ENTITY aboutTor.footer.label "Die JonDos GmbH wurde im Jahr 2007 als Spin-Off eines universitären Forschungsprojektes gegründet. Hauptprodukt ist das in Deutschland recht bekannte Internet-Anonymisierungssystem „JonDonym“. Mittlerweile bietet JonDos außerdem IT-Dienstleistungen in verschiedenen Bereichen der allgemeinen Software-Entwicklung und Software-Integration an.">
-<!ENTITY aboutTor.learnMore.label "Mehr über das JonDo-Projekt erfahren »">
-<!ENTITY aboutTor.learnMore.link "https://www.anonym-surfen.de/jondofox.html">
+<!ENTITY aboutTor.learnMore.label "Mehr über das JonDonym-Projekt erfahren »">
+<!ENTITY aboutTor.learnMore.link "https://www.anonym-surfen.de">

@@ -1,11 +1,11 @@
 <!ENTITY project.start           "&brandShortName; wird entwickelt von ">
-<!-- LOCALIZATION NOTE (project.tpoLink): This is a link title that links to https://www.torproject.org -->
+<!-- LOCALIZATION NOTE (project.tpoLink): This is a link title that links to https://www.jondos.de -->
 <!ENTITY project.tpoLink         "das &vendorShortName;">
-<!ENTITY project.end             ", eine gemeinnützige Organisation, um Ihre Privatsphäre und Freiheit im Internet zu verteidigen.">
+<!ENTITY project.end             ", um Ihre Privatsphäre und Freiheit im Internet zu verteidigen.">
 
 <!ENTITY help.start              "Sie wollen helfen? ">
 <!-- LOCALIZATION NOTE (help.donate): This is a link title that links to https://www.torproject.org/donate/donate.html.en -->
-<!ENTITY help.donateLink         "Spenden">
+<!ENTITY help.donateLink         "Kaufen Sie Premium!">
 <!ENTITY help.or                 "oder">
 <!-- LOCALIZATION NOTE (help.getInvolvedLink): This is a link title that links to https://www.torproject.org/getinvolved/volunteer.html.en -->
 <!ENTITY help.getInvolvedLink    "machen Sie mit">
@@ -13,7 +13,7 @@
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to https://www.torproject.org/docs/trademark-faq.html.en -->
 <!ENTITY bottomLinks.questions   "Fragen?">
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to https://www.torproject.org/getinvolved/relays -->
-<!ENTITY bottomLinks.grow        "Helfen Sie beim Ausweiten des JonDo-Netzwerks!">
+<!ENTITY bottomLinks.grow        "Helfen Sie beim Ausweiten des JonDonym-Netzwerks!">
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to about:license -->
 <!ENTITY bottomLinks.license  "Lizenzinformationen">
-<!ENTITY tor.TrademarkStatement   "&quot;Tor&quot; und das &quot;Onion-Logo&quot; sind eingetragene Warenzeichen von the Tor Project, Inc.">
+<!ENTITY tor.TrademarkStatement   "&quot;JonDoBrowser&quot; und das &quot;JonDoBrowser logos&quot; sind Warenzeichen der JonDos GmbH, Deutschland.">

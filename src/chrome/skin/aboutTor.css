@@ -46,7 +46,7 @@ body[toron] {
 }
 
 body[toron] #torstatus-image {
-  background-image: url('chrome://torbutton/content/aboutTor/tor-on.png');
+  background-image: url('chrome://torbutton/content/aboutTor/default84x128-green.png');
 }
 
 #torstatus-image {
@@ -54,7 +54,7 @@ body[toron] #torstatus-image {
   left: 70px;
   height: 128px;
   width: 128px;
-  background-image: url('chrome://torbutton/content/aboutTor/tor-off.png');
+  background-image: url('chrome://torbutton/content/aboutTor/default84x128-blue.png');
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;

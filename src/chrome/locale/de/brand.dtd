@@ -5,7 +5,7 @@
 <!ENTITY  brandShorterName      "JonDoBrowser">
 <!ENTITY  brandShortName        "JonDoBrowser">
 <!ENTITY  brandFullName         "JonDoBrowser">
-<!ENTITY  vendorShortName       "JonDos GmbH">
+<!ENTITY  vendorShortName       "JonDos">
 <!ENTITY  trademarkInfo.part1   "Firefox und die Firefox-Logos sind Warenzeichen der Mozilla Foundation.">
 
 <!-- The following strings are for bug #10280's UI. We place them here for our translators -->

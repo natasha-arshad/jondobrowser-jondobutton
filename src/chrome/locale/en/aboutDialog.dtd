@@ -1,11 +1,11 @@
 <!ENTITY project.start           "&brandShortName; is developed by ">
 <!-- LOCALIZATION NOTE (project.tpoLink): This is a link title that links to https://www.torproject.org -->
 <!ENTITY project.tpoLink         "the &vendorShortName;">
-<!ENTITY project.end             ", an organization to defend your privacy and freedom online.">
+<!ENTITY project.end             ", in order to defend your privacy and freedom online.">
 
 <!ENTITY help.start              "Want to help? ">
 <!-- LOCALIZATION NOTE (help.donate): This is a link title that links to https://www.torproject.org/donate/donate.html.en -->
-<!ENTITY help.donateLink         "Donate">
+<!ENTITY help.donateLink         "Buy premium!">
 <!ENTITY help.or                 " or ">
 <!-- LOCALIZATION NOTE (help.getInvolvedLink): This is a link title that links to https://www.torproject.org/getinvolved/volunteer.html.en -->
 <!ENTITY help.getInvolvedLink    "get involved">
@@ -13,7 +13,7 @@
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to https://www.torproject.org/docs/trademark-faq.html.en -->
 <!ENTITY bottomLinks.questions   "Questions?">
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to https://www.torproject.org/getinvolved/relays -->
-<!ENTITY bottomLinks.grow        "Help the JonDo Network Grow!">
+<!ENTITY bottomLinks.grow        "Help the JonDonym Network Grow!">
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to about:license -->
 <!ENTITY bottomLinks.license  "Licensing Information">
-<!ENTITY tor.TrademarkStatement   "JonDoBrowser and the JonDoBrowser logos are trademarks of JonDos GmbH, Germany.">
+<!ENTITY tor.TrademarkStatement   "&quot;JonDoBrowser&quot; and the &quot;JonDoBrowser logos&quot;  are trademarks of JonDos GmbH, Germany.">
