@@ -58,20 +58,3 @@ pref("browser.startup.homepage", "chrome://torbutton/content/locale/non-localize
 
 // This pref specifies an ad-hoc "version" for various pref update hacks we need to do
 pref("extensions.torbutton.pref_fixup_version", 0);
-
-// Theese prefs set the about:preferences values
-pref("network.proxy.type", 1);
-pref("network.proxy.ssl", "127.0.0.1");
-pref("network.proxy.ssl_port", 4001);
-pref("network.proxy.socks", "127.0.0.1");
-pref("network.proxy.socks_port", 4001);
-pref("network.proxy.http", "127.0.0.1");
-pref("network.proxy.http_port", 4001);
-pref("network.proxy.ftp", "127.0.0.1");
-pref("network.proxy.ftp_port", 4001);
-pref("network.proxy.backup.ssl", "127.0.0.1");
-pref("network.proxy.backup.ssl_port", 4001);
-pref("network.proxy.backup.socks", "127.0.0.1");
-pref("network.proxy.backup.socks_port", 4001);
-pref("network.proxy.backup.ftp", "127.0.0.1");
-pref("network.proxy.backup.ftp_port", 4001);
