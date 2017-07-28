@@ -155,6 +155,9 @@ contract @torproject.org/cookie-jar-selector;1 {e6204253-b690-4159-bfe8-d4eedab6
 component {84d47da6-79c3-4661-aa9f-8049476f7bf5} components/aboutTor.js
 contract @mozilla.org/network/protocol/about;1?what=tor {84d47da6-79c3-4661-aa9f-8049476f7bf5}
 
+component {bee9c190-729a-11e7-9598-0800200c9a66} components/aboutNoProxy.js
+contract @mozilla.org/network/protocol/about;1?what=noproxy {bee9c190-729a-11e7-9598-0800200c9a66}
+
 component {5d57312b-5d8c-4169-b4af-e80d6a28a72e} components/torCheckService.js
 contract @torproject.org/torbutton-torCheckService;1 {5d57312b-5d8c-4169-b4af-e80d6a28a72e}
 
