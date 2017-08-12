@@ -1090,6 +1090,21 @@ function torbutton_new_identity() {
  */
 // Bug 1506 P4: Needed for New Identity.
 function torbutton_do_new_identity() {
+  // call jondoswitcher to send XHRPackets to control JAP.jar to switch cascade
+  if (typeof window === "undefined") {
+      //If there is no window defined, get the most recent.
+      var window = Components.classes["@mozilla.org/appshell/window-mediator;1"]
+                         .getService(Components.interfaces.nsIWindowMediator)
+                           .getMostRecentWindow("navigator:browser");
+  }
+  //This assumes that this event is being both sent from 
+  //  and received by privileged (main add-on) code.
+  var event = new CustomEvent('Jondo-New-Identity', null);
+  window.dispatchEvent(event);
+
+
+
+
   var obsSvc = Components.classes["@mozilla.org/observer-service;1"].getService(Ci.nsIObserverService);
   torbutton_log(3, "New Identity: Disabling JS");
   torbutton_disable_all_js();
@@ -1307,6 +1322,7 @@ function torbutton_do_new_identity() {
 
   torbutton_log(3, "New Identity: Sending NEWNYM");
 
+  /*
   // We only support TBB for newnym.
   if (!m_tb_control_pass || (!m_tb_control_ipc_file && !m_tb_control_port)) {
     var warning = torbutton_get_property_string("torbutton.popup.no_newnym");
@@ -1319,6 +1335,11 @@ function torbutton_do_new_identity() {
       window.alert(warning);
     }
   }
+  */
+
+
+
+
 
   torbutton_log(3, "Ending any remaining private browsing sessions.");
   obsSvc.notifyObservers(null, "last-pb-context-exited", "");
@@ -1365,6 +1386,13 @@ function torbutton_do_new_identity() {
     torbutton_log(3, "Completed New Identity GC pass");
   });
 
+  /*
+  //delay for at least 1 second, while message is sent to jondoswitcher
+  var startdate = new Date();
+  var latestDate = null;
+  do { latestDate = new Date(); }
+  while(latestDate - startdate < 1000);
+  */
   // Close the current window for added safety
   window.close();
 }

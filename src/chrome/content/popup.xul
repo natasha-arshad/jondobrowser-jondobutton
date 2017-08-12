@@ -16,6 +16,13 @@
          anchor="torbutton-button" position="after_start" >
     <hbox align="start">
       <vbox>
+        <menuitem id="torbutton-new-identity"
+                  label="&torbutton.context_menu.new_identity;"
+                  accesskey="&torbutton.context_menu.new_identity_key;"
+                  key="torbutton-new-identity-key"
+                  insertafter="context-stop"
+                  oncommand="torbutton_new_identity()"/>
+        <menuseparator/>
         <menuitem id="torbutton-preferences"
                   label="&torbutton.context_menu.preferences;"
                   accesskey="&torbutton.context_menu.preferences.key;"
