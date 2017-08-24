@@ -51,7 +51,7 @@ body[toron] #torstatus-image {
 
 #torstatus-image {
   position: absolute;
-  left: 70px;
+  left: 40px;
   height: 128px;
   width: 128px;
   background-image: url('chrome://torbutton/content/aboutTor/default84x128-blue.png');

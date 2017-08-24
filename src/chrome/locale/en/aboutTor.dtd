@@ -12,7 +12,7 @@
 
 <!ENTITY aboutTor.check.label "Test JonDo Network Settings">
 
-<!ENTITY aboutTor.success.label "Welcome to JonDo-Browser">
+<!ENTITY aboutTor.success.label "Welcome to JonDoBrowser">
 <!ENTITY aboutTor.success2.label "Connected to the JonDoFox network.">
 <!ENTITY aboutTor.success3.label "You are now free to browse the Internet anonymously.">
 <!ENTITY aboutTor.failure.label "Something Went Wrong!">

@@ -28,3 +28,6 @@
 <!ENTITY aboutNoProxy.footer.label "The JonDos GmbH was founded in 2007 as a spin off of a university research project. Main product is the in Germany well known internet anonymisation system „JonDonym“. Meantime JonDos offers IT services in different areas of general software development and software integration.">
 <!ENTITY aboutNoProxy.learnMore.label "Learn more about The JonDonym Project »">
 <!ENTITY aboutNoProxy.learnMore.link "https://anonymous-proxy-servers.net/en/">
+
+<!ENTITY aboutTor.searchDDGPost.link "https://duckduckgo.com">
+<!ENTITY aboutTor.search.label "Search">
