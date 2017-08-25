@@ -12,7 +12,7 @@
 
 <!ENTITY aboutTor.check.label "Test JonDo Network Settings">
 
-<!ENTITY aboutTor.success.label "Welcome to JonDo-Browser">
+<!ENTITY aboutTor.success.label "Welcome to JonDoBrowser">
 <!ENTITY aboutTor.success2.label "Connected to the JonDoFox network.">
 <!ENTITY aboutTor.success3.label "You are now free to browse the Internet anonymously.">
 <!ENTITY aboutTor.failure.label "Something Went Wrong!">
@@ -31,7 +31,7 @@
 <!ENTITY aboutTor.whatnext.label "Tips On Staying Anonymous »">
 <!ENTITY aboutTor.whatnext.link "https://anonymous-proxy-servers.net/en/help/index.html">
 <!ENTITY aboutTor.torbrowser_user_manual.accesskey "M">
-<!ENTITY aboutTor.torbrowser_user_manual.label "JonDo Browser User Manual">
+<!ENTITY aboutTor.torbrowser_user_manual.label "JonDoBrowser User Manual">
 <!ENTITY aboutTor.helpInfo1.label "You Can Help!">
 <!ENTITY aboutTor.helpInfo2.label "JonDoBrowser is free, but you can support the development:">
 <!ENTITY aboutTor.helpInfo3.label "Test Premium for free »">
