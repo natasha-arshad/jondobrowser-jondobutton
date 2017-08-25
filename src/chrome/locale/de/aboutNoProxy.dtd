@@ -29,3 +29,6 @@
 <!ENTITY aboutNoProxy.footer.label "Die JonDos GmbH wurde im Jahr 2007 als Spin-Off eines universitären Forschungsprojektes gegründet. Hauptprodukt ist das in Deutschland recht bekannte Internet-Anonymisierungssystem „JonDonym“. Mittlerweile bietet JonDos außerdem IT-Dienstleistungen in verschiedenen Bereichen der allgemeinen Software-Entwicklung und Software-Integration an.">
 <!ENTITY aboutNoProxy.learnMore.label "Mehr über das JonDonym-Projekt erfahren »">
 <!ENTITY aboutNoProxy.learnMore.link "https://www.anonym-surfen.de">
+
+<!ENTITY aboutTor.searchDDGPost.link "https://duckduckgo.com">
+<!ENTITY aboutTor.search.label "Search">
