@@ -16,4 +16,4 @@
 <!ENTITY bottomLinks.grow        "帮助 Tor 网络成长！">
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to about:license -->
 <!ENTITY bottomLinks.license  "许可信息">
-<!ENTITY tor.TrademarkStatement   "“Tor”和“Onion Logo”是 Tor Project, Inc 的注册商标。">
+<!ENTITY tor.TrademarkStatement   "“Tor”和“Onion Logo”是 JonDos GmbH, Inc 的注册商标。">

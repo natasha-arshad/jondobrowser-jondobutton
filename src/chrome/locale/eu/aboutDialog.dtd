@@ -16,4 +16,4 @@
 <!ENTITY bottomLinks.grow        "Lagundu Tor sarea hazten!">
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to about:license -->
 <!ENTITY bottomLinks.license  "Lizentziei Buruzko Informazioa">
-<!ENTITY tor.TrademarkStatement   "'Tor' eta 'Onion Logo' Tor Project, Inc.ren marka erregistratuak dira.">
+<!ENTITY tor.TrademarkStatement   "'Tor' eta 'Onion Logo' JonDos GmbH, Inc.ren marka erregistratuak dira.">

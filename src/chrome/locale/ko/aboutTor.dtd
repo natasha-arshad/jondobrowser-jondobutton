@@ -1,5 +1,5 @@
 <!--
-   - Copyright (c) 2015, The Tor Project, Inc.
+   - Copyright (c) 2015, The JonDos GmbH, Inc.
    - See LICENSE for licensing information.
    - vim: set sw=2 sts=2 ts=8 et syntax=xml:
   -->
@@ -8,7 +8,7 @@
 
 <!ENTITY aboutTor.outOfDateTorOn.label "주의: 현재 구버전 브라우저를 사용하고 계십니다.">
 <!ENTITY aboutTor.outOfDateTorOff.label "또한,  현재 구버전 브라우저를 사용하고 계십니다.">
-<!ENTITY aboutTor.outOfDate2.label "onion을 클릭하고 Tor Browser 업데이트 체크를 선택하세요.">
+<!ENTITY aboutTor.outOfDate2.label "onion을 클릭하고 JonDoBrowser 업데이트 체크를 선택하세요.">
 
 <!ENTITY aboutTor.check.label "Tor 네트워크 설정 테스트">
 
@@ -30,7 +30,7 @@
 <!ENTITY aboutTor.whatnext.label "익명으로 알짱거릴 때의 팁 &gt;&gt;">
 <!ENTITY aboutTor.whatnext.link "https://www.torproject.org/download/download.html.en#warning">
 <!ENTITY aboutTor.torbrowser_user_manual.accesskey "M">
-<!ENTITY aboutTor.torbrowser_user_manual.label "Tor Browser User Manual">
+<!ENTITY aboutTor.torbrowser_user_manual.label "Tor 브라우저 사용자 설명서">
 <!ENTITY aboutTor.helpInfo1.label "여러분도 도울 수 있습니다!">
 <!ENTITY aboutTor.helpInfo2.label "여러분이 Tor 네트워크를 보다 빠르고 강하게 만들 수 있는 방법이 있습니다.">
 <!ENTITY aboutTor.helpInfo3.label "Tor 중계 서버 node 실행 »">

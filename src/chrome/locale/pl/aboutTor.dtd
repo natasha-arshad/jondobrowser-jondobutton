@@ -1,5 +1,5 @@
 <!--
-   - Copyright (c) 2015, The Tor Project, Inc.
+   - Copyright (c) 2015, The JonDos GmbH, Inc.
    - See LICENSE for licensing information.
    - vim: set sw=2 sts=2 ts=8 et syntax=xml:
   -->
@@ -12,7 +12,7 @@
 
 <!ENTITY aboutTor.check.label "Przetestuj Ustawienia Sieci Tor">
 
-<!ENTITY aboutTor.success.label "Witamy w Tor Browser">
+<!ENTITY aboutTor.success.label "Witamy w JonDoBrowser">
 <!ENTITY aboutTor.success2.label "Połączono z siecią Tor">
 <!ENTITY aboutTor.success3.label "Możesz teraz swobodnie przeglądać Internet anonimowo.">
 <!ENTITY aboutTor.failure.label "Coś poszło nie tak!">
@@ -30,7 +30,7 @@
 <!ENTITY aboutTor.whatnext.label "Porady: Jak pozostać anonimowym w internecie »">
 <!ENTITY aboutTor.whatnext.link "https://www.torproject.org/download/download.html.en#warning">
 <!ENTITY aboutTor.torbrowser_user_manual.accesskey "M">
-<!ENTITY aboutTor.torbrowser_user_manual.label "Instrukcja korzystania z Tor Browser">
+<!ENTITY aboutTor.torbrowser_user_manual.label "Instrukcja korzystania z JonDoBrowser">
 <!ENTITY aboutTor.helpInfo1.label "Możesz pomóc!">
 <!ENTITY aboutTor.helpInfo2.label "Istnieje wiele sposobów, abyś mógł uczynić sieć Tor'a szybszą i silniejszą:">
 <!ENTITY aboutTor.helpInfo3.label "Uruchom Przekaźnikowy Węzeł Tora »">
@@ -43,5 +43,5 @@
 <!ENTITY aboutTor.footer.label "Projekt Tor jest organizacją non-profit*, zajmująca się badaniami, rozwojem i edukacji o anonimowości i prywatności w internecie.
 
 * 501(c)(3)">
-<!ENTITY aboutTor.learnMore.label "Dowiedz się więcej na temat Tor Project »">
+<!ENTITY aboutTor.learnMore.label "Dowiedz się więcej na temat JonDos GmbH »">
 <!ENTITY aboutTor.learnMore.link "https://www.torproject.org/about/overview.html.en">

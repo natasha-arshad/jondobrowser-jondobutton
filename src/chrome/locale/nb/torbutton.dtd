@@ -1,7 +1,7 @@
 <!ENTITY torbutton.context_menu.new_identity "Ny Identitet">
 <!ENTITY torbutton.context_menu.new_identity_key "I">
 <!ENTITY torbutton.context_menu.networksettings "Åpne nettverksinnstillinger...">
-<!ENTITY torbutton.context_menu.downloadUpdate "Last ned Tor Browser Bundle oppdatering...">
+<!ENTITY torbutton.context_menu.downloadUpdate "Last ned JonDoBrowser Bundle oppdatering...">
 <!ENTITY torbutton.context_menu.downloadUpdate.key "U">
 <!ENTITY torbutton.context_menu.cookieProtections "Informasjonskapsel Beskyttelser">
 <!ENTITY torbutton.context_menu.cookieProtections.key "C">
@@ -19,4 +19,4 @@
 <!ENTITY torbutton.cookiedialog.saveAllCookies "Beskytt Nye Informasjonskapsler">
 <!ENTITY torbutton.cookiedialog.doNotSaveAllCookies "Ikke Beskytt Nye Informasjonskapsler">
 <!ENTITY torbutton.prefs.restrict_thirdparty "Begrens tredjeparts informasjonskapsler og andre sporingsdata.">
-<!ENTITY torbutton.prefs.resist_fingerprinting "Endre detaljer som skiller deg fra andre Tor Browser brukere.">
+<!ENTITY torbutton.prefs.resist_fingerprinting "Endre detaljer som skiller deg fra andre JonDoBrowser brukere.">

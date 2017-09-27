@@ -1,16 +1,16 @@
 <!ENTITY torbutton.context_menu.new_identity "New Identity">
 <!ENTITY torbutton.context_menu.new_identity_key "I">
-<!ENTITY torbutton.context_menu.new_circuit "New JonDo Circuit for this Site">
+<!ENTITY torbutton.context_menu.new_circuit "New Tor Circuit for this Site">
 <!ENTITY torbutton.context_menu.new_circuit_key "C">
-<!ENTITY torbutton.context_menu.preferences "Privacy and Security Settings…">
+<!ENTITY torbutton.context_menu.preferences "Security Settings…">
 <!ENTITY torbutton.context_menu.preferences.key "S">
-<!ENTITY torbutton.context_menu.networksettings "JonDo Network Settings…">
+<!ENTITY torbutton.context_menu.networksettings "Tor Network Settings…">
 <!ENTITY torbutton.context_menu.networksettings.key "N">
 <!ENTITY torbutton.context_menu.downloadUpdate "Check for JonDoBrowser Update…">
 <!ENTITY torbutton.context_menu.downloadUpdate.key "U">
 <!ENTITY torbutton.context_menu.cookieProtections "Cookie Protections…">
 <!ENTITY torbutton.context_menu.cookieProtections.key "C">
-<!ENTITY torbutton.button.tooltip "Click to initialize JonDoFox">
+<!ENTITY torbutton.button.tooltip "Click to initialize Torbutton">
 <!ENTITY torbutton.prefs.security_settings "JonDoBrowser Security Settings">
 <!ENTITY torbutton.prefs.restore_defaults "Restore Defaults">
 <!ENTITY torbutton.prefs.custom_warning "Your custom browser preferences have resulted in unusual security settings. For security and privacy reasons, we recommend you choose one of the default security levels.">
@@ -58,5 +58,4 @@
 <!ENTITY torbutton.prefs.sec_all_js_desc "JavaScript is disabled by default on all sites.">
 <!ENTITY torbutton.prefs.sec_webfonts_desc "Some fonts and icons may display incorrectly.">
 <!ENTITY torbutton.prefs.sec_webfonts_desc_tooltip "Website-provided font files are blocked.">
-<!ENTITY torbutton.circuit_display.title "JonDo circuit for this site">
-
+<!ENTITY torbutton.circuit_display.title "Tor circuit for this site">

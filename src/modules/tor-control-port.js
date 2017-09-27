@@ -1,4 +1,4 @@
-// A module for TorBrowser that provides an asynchronous controller for
+// A module for JonDoBrowser that provides an asynchronous controller for
 // Tor, through its ControlPort.
 //
 // This file is written in call stack order (later functions

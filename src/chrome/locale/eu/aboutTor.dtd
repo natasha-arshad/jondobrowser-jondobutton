@@ -1,5 +1,5 @@
 <!--
-   - Copyright (c) 2015, The Tor Project, Inc.
+   - Copyright (c) 2015, The JonDos GmbH, Inc.
    - See LICENSE for licensing information.
    - vim: set sw=2 sts=2 ts=8 et syntax=xml:
   -->
@@ -8,11 +8,11 @@
 
 <!ENTITY aboutTor.outOfDateTorOn.label "KONTUZ: nabigatzaile hau zaharkituta dago.">
 <!ENTITY aboutTor.outOfDateTorOff.label "BAITA, nabigatzaile hau zaharkituta dago.">
-<!ENTITY aboutTor.outOfDate2.label "Tipulan sakatu eta ondoren Tor Browser Bundlea egiaztatu hautatu">
+<!ENTITY aboutTor.outOfDate2.label "Tipulan sakatu eta ondoren JonDoBrowser Bundlea egiaztatu hautatu">
 
 <!ENTITY aboutTor.check.label "Tor sare ezarpenak frogatu">
 
-<!ENTITY aboutTor.success.label "Ongi etorri Tor Browserera">
+<!ENTITY aboutTor.success.label "Ongi etorri JonDoBrowserera">
 <!ENTITY aboutTor.success2.label "Tor sarera konektatuta.">
 <!ENTITY aboutTor.success3.label "Aske zara orain Internet anonimotasunez nabigatzeko.">
 <!ENTITY aboutTor.failure.label "Zerbait gaizki joan da!">
@@ -30,7 +30,7 @@
 <!ENTITY aboutTor.whatnext.label "Anonimo mantentzeko aholkuak »">
 <!ENTITY aboutTor.whatnext.link "https://www.torproject.org/download/download.html.en#warning">
 <!ENTITY aboutTor.torbrowser_user_manual.accesskey "M">
-<!ENTITY aboutTor.torbrowser_user_manual.label "Tor Browser User Manual">
+<!ENTITY aboutTor.torbrowser_user_manual.label "JonDoBrowser User Manual">
 <!ENTITY aboutTor.helpInfo1.label "Lagundu dezakezu!">
 <!ENTITY aboutTor.helpInfo2.label "Tor sarea bizkorragoa eta indartsuagoa egiteko hainbat modutan lagundu dezakezu:">
 <!ENTITY aboutTor.helpInfo3.label "Tor errele nodo bat exekutatu »">
@@ -40,6 +40,6 @@
 <!ENTITY aboutTor.helpInfo5.label "Dohaintza egin »">
 <!ENTITY aboutTor.helpInfo5.link "https://www.torproject.org/donate/donate.html.en">
 
-<!ENTITY aboutTor.footer.label "The Tor Project irabazi asmorik gabeko US 501(c)(3) bat da, ikerketara, garapenera, eta onlineko anonimotasuna eta pribatutasunaren hezkuntzara zuzendutakoa.">
-<!ENTITY aboutTor.learnMore.label "The Tor Projecti buruz gehiago ikasi »">
+<!ENTITY aboutTor.footer.label "The JonDos GmbH irabazi asmorik gabeko US 501(c)(3) bat da, ikerketara, garapenera, eta onlineko anonimotasuna eta pribatutasunaren hezkuntzara zuzendutakoa.">
+<!ENTITY aboutTor.learnMore.label "The JonDos GmbHi buruz gehiago ikasi »">
 <!ENTITY aboutTor.learnMore.link "https://www.torproject.org/about/overview.html.en">

@@ -16,4 +16,4 @@
 <!ENTITY bottomLinks.grow        "Помогите сети Tor стать больше!">
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to about:license -->
 <!ENTITY bottomLinks.license  "Информация о лицензии">
-<!ENTITY tor.TrademarkStatement   "'Tor' и логотип 'Onion' являются зарегистрированными торговыми марками Tor Project, Inc.">
+<!ENTITY tor.TrademarkStatement   "'Tor' и логотип 'Onion' являются зарегистрированными торговыми марками JonDos GmbH, Inc.">

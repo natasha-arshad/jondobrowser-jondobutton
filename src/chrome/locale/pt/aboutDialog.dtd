@@ -16,4 +16,4 @@
 <!ENTITY bottomLinks.grow        "Ajude a crescer a rede Tor!">
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to about:license -->
 <!ENTITY bottomLinks.license  "Informação de licenciamento">
-<!ENTITY tor.TrademarkStatement   "'Tor' e o 'Logótipo Onion' são marcas registadas de Tor Project, Inc.">
+<!ENTITY tor.TrademarkStatement   "'Tor' e o 'Logótipo Onion' são marcas registadas de JonDos GmbH, Inc.">

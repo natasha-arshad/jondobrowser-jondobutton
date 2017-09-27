@@ -56,5 +56,6 @@ locale torbutton zh-CN jar:chrome/torbutton.jar!/locale/en/
 locale torbutton zh-HK jar:chrome/torbutton.jar!/locale/en/
 locale torbutton zh-TW jar:chrome/torbutton.jar!/locale/en/
 
+
 skin torbutton classic/1.0 jar:chrome/torbutton.jar!/skin/
 style chrome://global/content/customizeToolbar.xul chrome://torbutton/skin/torbutton.css
