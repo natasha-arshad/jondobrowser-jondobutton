@@ -3,12 +3,12 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
     <Description about="urn:mozilla:install-manifest">
-        <em:name>Torbutton</em:name>
-        <em:creator>Mike Perry</em:creator>
-        <em:id>torbutton@torproject.org</em:id>
+        <em:name>JonDoFox</em:name>
+        <em:creator>JonDos GmbH</em:creator>
+        <em:id>info@jondos.de</em:id>
         <em:version>1.9.8.1jondo1</em:version>
         <em:multiprocessCompatible>true</em:multiprocessCompatible>
-        <em:homepageURL>https://www.torproject.org/projects/torbrowser.html.en</em:homepageURL>
+        <em:homepageURL>https://anonymous-proxy-servers.net/en/jondofox.html</em:homepageURL>
         <em:optionsURL>chrome://torbutton/content/preferences.xul</em:optionsURL>
         <em:iconURL>chrome://torbutton/skin/tor.png</em:iconURL>
         <em:updateURL>data:text/plain,</em:updateURL>

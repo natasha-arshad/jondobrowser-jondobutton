@@ -15,35 +15,41 @@
       <description class="text-blurb" id="projectDesc">
         &project.start;
         <label class="text-link"
-                     href="https://www.torproject.org/">
+                     href="https://www.jondos.de ">
           &project.tpoLink;
         </label>&project.end;
       </description>
+	  
       <description class="text-blurb" id="helpDesc">
         &help.start;
         <label class="text-link"
-               href="https://www.torproject.org/donate/donate.html.en">
+               href="https://shop.anonymous-proxy-servers.net/bin/payment">
           &help.donateLink;
         </label>
+		<!--
         &help.or;
         <label class="text-link"
                href="https://www.torproject.org/getinvolved/volunteer.html.en">
           &help.getInvolvedLink;
         </label>&help.end;
+		-->
       </description>
+	  
    </vbox>
   </vbox>
 
   <vbox id="bottomBox">
     <hbox id="newBottom" pack="center" position="1">
       <label class="text-link bottom-link"
-             href="https://www.torproject.org/docs/faq.html.en">
+             href="https://anonymous-proxy-servers.net/en/faq-jondo.html">
         &bottomLinks.questions;
       </label>
+	  <!--
       <label class="text-link bottom-link"
              href="https://www.torproject.org/getinvolved/relays">
         &bottomLinks.grow;
       </label>
+	  -->
       <label class="text-link bottom-link"
              href="about:license">
         &bottomLinks.license;

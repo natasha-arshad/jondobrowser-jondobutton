@@ -4,13 +4,13 @@
 <!ENTITY torbutton.context_menu.new_circuit_key "K">
 <!ENTITY torbutton.context_menu.preferences "Sicherheitseinstellungen …">
 <!ENTITY torbutton.context_menu.preferences.key "S">
-<!ENTITY torbutton.context_menu.networksettings "Tor-Netzwerk-Einstellungen …">
+<!ENTITY torbutton.context_menu.networksettings "JonDo-Netzwerk-Einstellungen...">
 <!ENTITY torbutton.context_menu.networksettings.key "N">
-<!ENTITY torbutton.context_menu.downloadUpdate "Auf JonDoBrowser-Aktualisierungen prüfen …">
+<!ENTITY torbutton.context_menu.downloadUpdate "Suche nach JonDoBrowser-Aktualisierungen...">
 <!ENTITY torbutton.context_menu.downloadUpdate.key "A">
 <!ENTITY torbutton.context_menu.cookieProtections "Cookie-Schutz …">
 <!ENTITY torbutton.context_menu.cookieProtections.key "C">
-<!ENTITY torbutton.button.tooltip "Klicken, um Torbutton zu aktivieren">
+<!ENTITY torbutton.button.tooltip "Klicken, um JonDoFox zu aktivieren">
 <!ENTITY torbutton.prefs.security_settings "JonDoBrowser-Sicherheitseinstellungen">
 <!ENTITY torbutton.prefs.restore_defaults "Standardeinstellungen wiederherstellen">
 <!ENTITY torbutton.prefs.custom_warning "Ihre benutzerdefinierten Browser-Einstellungen haben zu ungewöhnlichen Sicherheitseinstellungen geführt. Aus Gründen der Sicherheit und Privatsphäre empfehlen wir Ihnen eine der vorgegebenen Sicherheitsstufen auszuwählen.">
@@ -58,4 +58,4 @@
 <!ENTITY torbutton.prefs.sec_all_js_desc "JavaScript ist standardmäßig auf allen Webseiten deaktiviert.">
 <!ENTITY torbutton.prefs.sec_webfonts_desc "Manche Schriftarten und Symbole könnten falsch angezeigt werden.">
 <!ENTITY torbutton.prefs.sec_webfonts_desc_tooltip "Von Webseiten bereitgestellte Schriftartdateien werden blockiert.">
-<!ENTITY torbutton.circuit_display.title "Tor-Kanal für diese Seite">
+<!ENTITY torbutton.circuit_display.title "JonDo-Kanal für diese Seite">
