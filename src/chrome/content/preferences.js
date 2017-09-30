@@ -50,6 +50,20 @@ function torbutton_save_security_settings() {
   setIntPref("extensions.torbutton.security_slider",
              sliderPositionToPrefSetting(state.slider));
   setBoolPref("extensions.torbutton.security_custom", state.custom);
+
+  // call jondoswitcher to inform that security level has been changed
+  // This assumes that this event is being both sent from 
+  //  and received by privileged (main add-on) code.
+  var event = new CustomEvent('Jondo-Security-Level', null);
+  if (typeof window === "undefined") {
+      //If there is no window defined, get the most recent.
+      var window = Components.classes["@mozilla.org/appshell/window-mediator;1"]
+                         .getService(Components.interfaces.nsIWindowMediator)
+                           .getMostRecentWindow("navigator:browser");
+      window.dispatchEvent(event);
+  }else{
+      window.dispatchEvent(event);
+  }
 };
 
 // Increase the height of this window so that a vertical scrollbar is not

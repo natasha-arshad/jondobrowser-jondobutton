@@ -999,17 +999,19 @@ function torbutton_new_identity() {
  */
 // Bug 1506 P4: Needed for New Identity.
 function torbutton_do_new_identity() {
-// call jondoswitcher to send XHRPackets to control JAP.jar to switch cascade
+  // call jondoswitcher to inform jondoswitcher to switch Jondo cascade
+  //This assumes that this event is being both sent from 
+  //  and received by privileged (main add-on) code.
+  var event = new CustomEvent('Jondo-New-Identity', null);
   if (typeof window === "undefined") {
       //If there is no window defined, get the most recent.
       var window = Components.classes["@mozilla.org/appshell/window-mediator;1"]
                          .getService(Components.interfaces.nsIWindowMediator)
                            .getMostRecentWindow("navigator:browser");
+      window.dispatchEvent(event);
+  }else{
+      window.dispatchEvent(event);
   }
-  //This assumes that this event is being both sent from 
-  //  and received by privileged (main add-on) code.
-  var event = new CustomEvent('Jondo-New-Identity', null);
-  window.dispatchEvent(event);
 
 
 
