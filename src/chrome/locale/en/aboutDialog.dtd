@@ -16,4 +16,4 @@
 <!ENTITY bottomLinks.grow        "Help the JonDonym Network Grow!">
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to about:license -->
 <!ENTITY bottomLinks.license  "Licensing Information">
-<!ENTITY tor.TrademarkStatement   "&quot;JonDoBrowser&quot; and the &quot;JonDoBrowser logos&quot;  are trademarks of JonDos GmbH, Germany.">
+<!ENTITY tor.TrademarkStatement   "&quot;DemoBrowser&quot; and the &quot;DemoBrowser logos&quot;  are trademarks of JonDos GmbH, Germany.">

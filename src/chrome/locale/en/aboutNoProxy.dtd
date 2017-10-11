@@ -6,7 +6,7 @@
 
 <!ENTITY aboutNoProxy.title "About No Proxy">
 
-<!ENTITY aboutNoProxy.noproxy.label1 "Welcome to JonDoBrowser">
+<!ENTITY aboutNoProxy.noproxy.label1 "Welcome to DemoBrowser">
 <!ENTITY aboutNoProxy.noproxy.label2 "You turned off JonDo and Tor.">
 <!ENTITY aboutNoProxy.noproxy.label3 "Please turn on JonDo for anonymous browsing.">
 
@@ -15,9 +15,9 @@
 <!ENTITY aboutNoProxy.whatnext.label "Tips On Staying Anonymous »">
 <!ENTITY aboutNoProxy.whatnext.link "https://anonymous-proxy-servers.net/en/help/index.html">
 <!ENTITY aboutNoProxy.torbrowser_user_manual.accesskey "M">
-<!ENTITY aboutNoProxy.torbrowser_user_manual.label "JonDoBrowser User Manual">
+<!ENTITY aboutNoProxy.torbrowser_user_manual.label "DemoBrowser User Manual">
 <!ENTITY aboutNoProxy.helpInfo1.label "You Can Help!">
-<!ENTITY aboutNoProxy.helpInfo2.label "JonDoBrowser is free, but you can support the development:">
+<!ENTITY aboutNoProxy.helpInfo2.label "DemoBrowser is free, but you can support the development:">
 <!ENTITY aboutNoProxy.helpInfo3.label "Test Premium for free »">
 <!ENTITY aboutNoProxy.helpInfo3.link "https://shop.anonymous-proxy-servers.net/bin/testcoupon?lang=en">
 <!ENTITY aboutNoProxy.helpInfo4.label "Buy Premium »">

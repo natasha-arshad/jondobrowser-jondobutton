@@ -8,11 +8,11 @@
 
 <!ENTITY aboutTor.outOfDateTorOn.label "WARNING: this browser is out of date.">
 <!ENTITY aboutTor.outOfDateTorOff.label "ALSO, this browser is out of date.">
-<!ENTITY aboutTor.outOfDate2.label "Click on the globe and then choose Check for JonDoBrowser Update.">
+<!ENTITY aboutTor.outOfDate2.label "Click on the globe and then choose Check for DemoBrowser Update.">
 
 <!ENTITY aboutTor.check.label "Test JonDo Network Settings">
 
-<!ENTITY aboutTor.success.label "Welcome to JonDoBrowser">
+<!ENTITY aboutTor.success.label "Welcome to DemoBrowser">
 <!ENTITY aboutTor.success2.label "Connected to the JonDoFox network.">
 <!ENTITY aboutTor.success3.label "You are now free to browse the Internet anonymously.">
 <!ENTITY aboutTor.failure.label "Something Went Wrong!">
@@ -31,9 +31,9 @@
 <!ENTITY aboutTor.whatnext.label "Tips On Staying Anonymous »">
 <!ENTITY aboutTor.whatnext.link "https://anonymous-proxy-servers.net/en/help/index.html">
 <!ENTITY aboutTor.torbrowser_user_manual.accesskey "M">
-<!ENTITY aboutTor.torbrowser_user_manual.label "JonDoBrowser User Manual">
+<!ENTITY aboutTor.torbrowser_user_manual.label "DemoBrowser User Manual">
 <!ENTITY aboutTor.helpInfo1.label "You Can Help!">
-<!ENTITY aboutTor.helpInfo2.label "JonDoBrowser is free, but you can support the development:">
+<!ENTITY aboutTor.helpInfo2.label "DemoBrowser is free, but you can support the development:">
 <!ENTITY aboutTor.helpInfo3.label "Test Premium for free »">
 <!ENTITY aboutTor.helpInfo3.link "https://shop.anonymous-proxy-servers.net/bin/testcoupon?lang=en">
 <!ENTITY aboutTor.helpInfo4.label "Buy Premium »">
