@@ -2,9 +2,9 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY  brandShorterName      "JonDoBrowser">
-<!ENTITY  brandShortName        "JonDoBrowser">
-<!ENTITY  brandFullName         "JonDoBrowser">
+<!ENTITY  brandShorterName      "DemoBrowser">
+<!ENTITY  brandShortName        "DemoBrowser">
+<!ENTITY  brandFullName         "DemoBrowser">
 <!ENTITY  vendorShortName       "JonDos">
 <!ENTITY  trademarkInfo.part1   "Firefox und die Firefox-Logos sind Warenzeichen der Mozilla Foundation.">
 

@@ -8,11 +8,11 @@
 
 <!ENTITY aboutTor.outOfDateTorOn.label "WARNUNG: Dieser Browser ist nicht mehr aktuell!">
 <!ENTITY aboutTor.outOfDateTorOff.label "AUSSERDEM, dieser Browser ist nicht aktuell.">
-<!ENTITY aboutTor.outOfDate2.label "Klicken Sie auf den Globus und wählen Sie dann Suche nach JonDoBrowser-Aktualisierung.">
+<!ENTITY aboutTor.outOfDate2.label "Klicken Sie auf den Globus und wählen Sie dann Suche nach DemoBrowser-Aktualisierung.">
 
 <!ENTITY aboutTor.check.label "JonDo-Netzwerkeinstellungen testen">
 
-<!ENTITY aboutTor.success.label "Willkommen im JonDoBrowser">
+<!ENTITY aboutTor.success.label "Willkommen im DemoBrowser">
 <!ENTITY aboutTor.success2.label "Mit dem JonDo-Netzwerk verbunden.">
 <!ENTITY aboutTor.success3.label "Sie können jetzt anonym im Internet surfen.">
 <!ENTITY aboutTor.failure.label "Irgend etwas lief schief!">
@@ -30,9 +30,9 @@
 <!ENTITY aboutTor.whatnext.label "Tipps, um anonym zu bleiben »">
 <!ENTITY aboutTor.whatnext.link "https://www.anonym-surfen.de/help/index.html">
 <!ENTITY aboutTor.torbrowser_user_manual.accesskey "M">
-<!ENTITY aboutTor.torbrowser_user_manual.label "JonDoBrowser-Benutzerhandbuch">
+<!ENTITY aboutTor.torbrowser_user_manual.label "DemoBrowser-Benutzerhandbuch">
 <!ENTITY aboutTor.helpInfo1.label "Sie können helfen!">
-<!ENTITY aboutTor.helpInfo2.label "JonDoBrowser ist gratis, jedoch können Sie die Entwicklung unterstützen:">
+<!ENTITY aboutTor.helpInfo2.label "DemoBrowser ist gratis, jedoch können Sie die Entwicklung unterstützen:">
 <!ENTITY aboutTor.helpInfo3.label "Testen Sie Premium gratis »">
 <!ENTITY aboutTor.helpInfo3.link "https://shop.anonymous-proxy-servers.net/bin/testcoupon?lang=de">
 <!ENTITY aboutTor.helpInfo4.label "Kaufen Sie Premium »">
