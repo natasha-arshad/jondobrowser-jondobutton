@@ -16,4 +16,4 @@
 <!ENTITY bottomLinks.grow        "Tor Ağının Büyümesine Yardımcı Olun!">
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to about:license -->
 <!ENTITY bottomLinks.license  "Lisans Bilgileri">
-<!ENTITY tor.TrademarkStatement   "'Tor' ve 'Onion Logo' Tor Project, Inc. tarafından tescillenmiş markalardır.">
+<!ENTITY tor.TrademarkStatement   "'Tor' ve 'Onion Logo' JonDos GmbH, Inc. tarafından tescillenmiş markalardır.">

@@ -56,5 +56,6 @@ locale torbutton zh-CN chrome/locale/en/
 locale torbutton zh-HK chrome/locale/en/
 locale torbutton zh-TW chrome/locale/en/
 
+
 skin torbutton classic/1.0 chrome/skin/
 style chrome://global/content/customizeToolbar.xul chrome://torbutton/skin/torbutton.css

@@ -30,14 +30,14 @@
 <!ENTITY torbutton.prefs.restrict_thirdparty_tooltip "Gardez cette case cochée pour empêcher que diverses fonctions du navigateur soient utilisées pour vous suivre à la trace lorsque vous surfez sur le Web. Les fonctions modifiées incluent les URL de grands objets binaires, les canaux de diffusion, le cache du navigateur, les fichiers fichiers témoins, les favoricônes, les en-têtes Auth HTTP, les préconnexions de liens, localStorage, les URL de sources de médias, les requêtes OCSP, les travailleurs Web SharedWorker, et les billets de session TLS.">
 <!ENTITY torbutton.prefs.resist_fingerprinting "Modifier les détails qui vous distingue d'autres utilisateurs du navigateur Tor">
 <!ENTITY torbutton.prefs.resist_fingerprinting.accesskey "F">
-<!ENTITY torbutton.prefs.resist_fingerprinting_tooltip "Gardez cette case cochée pour cacher aux sites Web certaines choses qui pourraient être uniques à votre sujet, incluant l'état de votre batterie, les performances de l'ordinateur, l'agencement du clavier, les paramètres de langue, l'emplacement des greffons installés, la liste de greffons installés, l'état de votre réseau, l'orientation de l'écran, les niveaux de zoom particuliers aux sites, les types de fichiers pris en charge, les couleurs système et les capacités WebGL.">
+<!ENTITY torbutton.prefs.resist_fingerprinting_tooltip "Gardez cette case cochée pour cacher aux sites Web certaines choses qui pourraient être uniques à votre sujet, incluant les performances de votre ordinateur, l'agencement du clavier, les paramètres de langue, l'emplacement des greffons installés, la liste des greffons installés, l'état de votre réseau, l'orientation de l'écran, la taille de l'écran, les niveaux de zoom particuliers aux sites, les types de fichiers pris en charge, les couleurs système et les capacités WebGL.">
 <!ENTITY torbutton.prefs.sec_caption "Niveau de sécurité">
 <!ENTITY torbutton.prefs.sec_caption_tooltip "Le bouton de sécurité coulissant vous permet de désactiver certaines fonctions du navigateur qui le rendent plus vulnérable aux tentatives de piratage.">
 <!ENTITY torbutton.prefs.sec_low "Bas (par défaut)">
 <!ENTITY torbutton.prefs.sec_low_usable_desc "Cela offre l'expérience la plus conviviale.">
 <!ENTITY torbutton.prefs.sec_low_desc "À ce niveau de sécurité, toutes les fonctions du navigateur sont activées.">
 <!ENTITY torbutton.prefs.sec_font_rend_svg_tooltip "Le mécanisme de rendu de police SVG OpenType est désactivé.">
-<!ENTITY torbutton.prefs.sec_gen_desc "À ce niveau de sécurité, les changements suivants sont applicables (survolez avec la souris pour plus de détails ) :">
+<!ENTITY torbutton.prefs.sec_gen_desc "À ce niveau de sécurité, les changements suivants sont applicables (survolez avec la souris pour plus de détails) :">
 <!ENTITY torbutton.prefs.sec_html5_desc "Le contenu HTML5 vidéo et audio devient « cliquer pour lire » avec NoScript.">
 <!ENTITY torbutton.prefs.sec_html5_tooltip "Pour certains sites, vous aurez peut-être à utiliser le bouton NoScript de la barre d'outils pour activer ces objets multimédias.">
 <!ENTITY torbutton.prefs.sec_some_jit_desc "Certaines optimisations de performance de JavaScript sont désactivées.">

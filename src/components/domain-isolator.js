@@ -1,5 +1,5 @@
 // # domain-isolator.js
-// A component for TorBrowser that puts requests from different
+// A component for JonDoBrowser that puts requests from different
 // first party domains on separate tor circuits.
 
 // This file is written in call stack order (later functions
@@ -154,7 +154,7 @@ tor.isolateCircuitsByDomain = function () {
 
 // ## XPCOM component construction.
 // Module specific constants
-const kMODULE_NAME = "TorBrowser Domain Isolator";
+const kMODULE_NAME = "JonDoBrowser Domain Isolator";
 const kMODULE_CONTRACTID = "@torproject.org/domain-isolator;1";
 const kMODULE_CID = Components.ID("e33fd6d4-270f-475f-a96f-ff3140279f68");
 

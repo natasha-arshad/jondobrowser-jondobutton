@@ -1,7 +1,7 @@
 <!ENTITY torbutton.context_menu.new_identity "Нова самоличност">
 <!ENTITY torbutton.context_menu.new_identity_key "I">
 <!ENTITY torbutton.context_menu.networksettings "Open Network Settings…">
-<!ENTITY torbutton.context_menu.downloadUpdate "Download Tor Browser Bundle Update...">
+<!ENTITY torbutton.context_menu.downloadUpdate "Download JonDoBrowser Bundle Update...">
 <!ENTITY torbutton.context_menu.downloadUpdate.key "U">
 <!ENTITY torbutton.context_menu.cookieProtections "Cookie Protections">
 <!ENTITY torbutton.context_menu.cookieProtections.key "C">
@@ -19,4 +19,4 @@
 <!ENTITY torbutton.cookiedialog.saveAllCookies "Protect New Cookies">
 <!ENTITY torbutton.cookiedialog.doNotSaveAllCookies "Do Not Protect New Cookies">
 <!ENTITY torbutton.prefs.restrict_thirdparty "Restrict third party cookies and other tracking data">
-<!ENTITY torbutton.prefs.resist_fingerprinting "Change details that distinguish you from other Tor Browser users">
+<!ENTITY torbutton.prefs.resist_fingerprinting "Change details that distinguish you from other JonDoBrowser users">

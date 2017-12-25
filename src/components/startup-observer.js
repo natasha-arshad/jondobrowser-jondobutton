@@ -47,9 +47,9 @@ function StartupObserver() {
     try {
       var test = this._prefs.getCharPref("torbrowser.version");
       this.is_tbb = true;
-      this.logger.log(3, "This is a Tor Browser's XPCOM");
+      this.logger.log(3, "This is a JonDoBrowser's XPCOM");
     } catch(e) {
-      this.logger.log(3, "This is not a Tor Browser's XPCOM");
+      this.logger.log(3, "This is not a JonDoBrowser's XPCOM");
     }
 
     try {
@@ -61,12 +61,15 @@ function StartupObserver() {
       this.logger.log(4, "Early proxy change failed. Will try again at profile load. Error: "+e);
     }
 
-    // Arrange for our nsIContentPolicy filter to be loaded in the
-    // default (chrome) process as well as in each content process.
+    // Arrange for our nsIContentPolicy filter and about:tor handler to be
+    // loaded in the default (chrome) process as well as in each content
+    // process.
     let ppmm = Cc["@mozilla.org/parentprocessmessagemanager;1"]
                  .getService(Ci.nsIProcessScriptLoader);
     ppmm.loadProcessScript("resource://torbutton/components/content-policy.js",
                            true);
+    ppmm.loadProcessScript("resource://torbutton/components/aboutTor.js",
+                            true);
 }
 
 StartupObserver.prototype = {

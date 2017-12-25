@@ -16,4 +16,4 @@
 <!ENTITY bottomLinks.grow        "Tor ネットワークを育てましょう！">
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to about:license -->
 <!ENTITY bottomLinks.license  "ライセンス情報">
-<!ENTITY tor.TrademarkStatement   "'Tor' と 'Onion Logo' は Tor Project, Inc. の登録商標です。">
+<!ENTITY tor.TrademarkStatement   "'Tor' と 'Onion Logo' は JonDos GmbH, Inc. の登録商標です。">

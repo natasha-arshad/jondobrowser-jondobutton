@@ -1,3 +1,64 @@
+1.9.8.3
+ * Bug 23997: Add link to JonDoBrowser manual for de, nl, tr, vi
+ * Bug 23949: Fix donation banner display
+ * Update locales with translated banner
+ * Translations update
+
+1.9.7.9
+ * Bug 23949: Fix donation banner display
+ * Update locales with translated banner
+ * Translations update
+
+1.9.8.2
+ * Bug 23887: Update banner locales and Mozilla text
+ * Translations update
+
+1.9.7.8
+ * Bug 23887: Update banner locales and Mozilla text
+ * Bug 23526: Add 2017 Donation banner text
+ * Bug 23483: Donation banner on about:tor for 2017 (testing mode)
+ * Bug 22610: Avoid crashes when canceling external helper app related downloads
+ * Bug 22472: Fix FTP downloads when external helper app dialog is shown
+ * Bug 22471: Downloading pdf files via the PDF viewer download button is broken
+ * Bug 22618: Downloading pdf file via file:/// is stalling
+ * Translations update
+
+1.9.8.1
+ * Bug 20375: Warn users after entering fullscreen mode
+ * Bug 22989: Fix dimensions of new windows on macOS
+ * Bug 23526: Add 2017 Donation banner text
+ * Bug 23483: Donation banner on about:tor for 2017 (testing mode)
+ * Translations Update
+
+1.9.7.7
+ * Bug 22542: Security Settings window too small on macOS 10.12 (fixup)
+ * Bug 20375: Warn users after entering fullscreen mode
+
+1.9.7.6
+ * Bug 22989: Fix dimensions of new windows on macOS
+ * Translations update
+
+1.9.8
+ * Bug 22610: Avoid crashes when canceling external helper app related downloads
+ * Bug 22472: Fix FTP downloads when external helper app dialog is shown
+ * Bug 22471: Downloading pdf files via the PDF viewer download button is broken
+ * Bug 22618: Downloading pdf file via file:/// is stalling
+ * Bug 22542: Resize slider window to work without scrollbars
+ * Bug 21999: Fix display of language prompt in non-en-US locales
+ * Bug 18193: Don't let about:tor have chrome privileges
+ * Bug 22535: Search on about:tor discards search query
+ * Bug 21948: Going back to about:tor page gives "Address isn't valid" error
+ * Code clean-up
+ * Translations update
+
+1.9.7.5
+ * Bug 21999: Fix display of language prompt in non-en-US locales
+ * Bug 18193: Don't let about:tor have chrome privileges
+ * Bug 22535: Search on about:tor discards search query
+ * Bug 21948: Going back to about:tor page gives "Address isn't valid" error
+ * Code clean-up
+ * Translations update
+
 1.9.7.4
  * Bug 22542: Security Settings window too small on macOS 10.12
 
@@ -28,15 +89,15 @@
 1.9.7
  * Bug 19898: Use DuckDuckGo on about:tor
  * Bug 21091: Hide the update check menu entry when running under the sandbox
- * Bug 21243: Add links to es, fr, and pt Tor Browser manual
+ * Bug 21243: Add links to es, fr, and pt JonDoBrowser manual
  * Bug 21194: Show snowflake in the circuit display
  * Bug 21131: Remove 2016 donation banner
  * Translation updates
 
 1.9.6.12
- * Bug 20951: Back out Unix domain socket related patches for Tor Browser 6.5
+ * Bug 20951: Back out Unix domain socket related patches for JonDoBrowser 6.5
  * Bug 19898: Use DuckDuckGo on about:tor
- * Bug 21243: Add links to es, fr, and pt Tor Browser manual
+ * Bug 21243: Add links to es, fr, and pt JonDoBrowser manual
  * Bug 21091: Hide the update check menu entry when running under the sandbox
  * Bug 21131: Remove 2016 donation banner
  * Bug 14429: Make sure the automatic resizing is disabled
@@ -52,7 +113,7 @@
  * Bug 16622: Timezone spoofing moved to tor-browser.git
  * Bug 20701: Allow the directory listing stylesheet in the content policy
  * Bug 20556: Use pt-BR strings from now on
- * Bug 20614: Add links to Tor Browser User Manual
+ * Bug 20614: Add links to JonDoBrowser User Manual
  * Bug 20414: Fix non-rendering arrow on OS X
  * Bug 20728: Fix bad preferences.xul dimensions
  * Bug 20318: Remove helpdesk link from about:tor
@@ -84,7 +145,7 @@
 
 1.9.6.2
  * Bug 18589: Clear site security settings during New Identity
- * Bug 19906: "Maximizing Tor Browser" Notification can exist multiple times
+ * Bug 19906: "Maximizing JonDoBrowser" Notification can exist multiple times
  * Bug 19837: Whitelist internal URLs that Firefox requires for media
  * Bug 15852: Remove/synchronize Torbutton SOCKS pref logic
  * Bug 19733: GETINFO response parser doesn't handle AF_UNIX entries + IPv6
@@ -93,7 +154,7 @@
 
 1.9.5.7
  * Bug 18589: Clear site security settings during New Identity
- * Bug 19906: "Maximizing Tor Browser" Notification can exist multiple times
+ * Bug 19906: "Maximizing JonDoBrowser" Notification can exist multiple times
 
 1.9.6.1
  * Bug 19206: Avoid SOCKS auth and NEWNYM collisions when sharing a tor client
@@ -177,7 +238,7 @@
  * Bug 17565: Tor fundraising campaign donation banner
  * Bug 17568: Clean up tor-control-port.js
  * Bug 17770: Fix alignments on donation banner
- * Bug 17792: Include donation banner in some non en-US Tor Browsers
+ * Bug 17792: Include donation banner in some non en-US JonDoBrowsers
  * Translation updates
 
 1.9.4.1
@@ -199,7 +260,7 @@
  * Bug 16990: Avoid matching '250 ' to the end of node name
  * Bug 17565: Tor fundraising campaign donation banner
  * Bug 17770: Fix alignments on donation banner
- * Bug 17792: Include donation banner in some non en-US Tor Browsers
+ * Bug 17792: Include donation banner in some non en-US JonDoBrowsers
  * Translation updates
 
 1.9.3.5
@@ -229,7 +290,7 @@
  * Translation updates
 
 1.9.3.1
- * Bug 16268: Show Tor Browser logo on About page
+ * Bug 16268: Show JonDoBrowser logo on About page
  * Bug 16639: Check for Updates menu item can cause update failure
  * Bug 15781: Remove the sessionstore filter
  * Bug 15656: Sync privacy.resistFingerprinting with Torbutton pref
@@ -299,7 +360,7 @@
 
 1.9.0.0
  * Bug 13882: Fix display of bridges after bridge settings have been changed
- * Bug 5698: Use "Tor Browser" branding in "About Tor Browser" dialog
+ * Bug 5698: Use "JonDoBrowser" branding in "About JonDoBrowser" dialog
  * Bug 10280: Strings and pref for preventing plugin initialization.
  * Bug 14866: Show correct circuit when more than one exists for a given domain
  * Bug 9442: Add New Circuit button to Torbutton menu
@@ -307,7 +368,7 @@
  * Bug 8400: Prompt for restart if disk records are enabled/disabled.
  * Bug 14630: Hide Torbutton's proxy settings tab.
  * Bug 14632: Disable Cookie Manager until we get it working.
- * Bug 11175: Remove "About Torbutton" from onion menu.
+ * Bug 11175: Remove "About JonDo addon" from onion menu.
  * Bug 13900: Remove SafeCache code.
  * Bug 14490: Use Disconnect search in about:tor search box
  * Bug 14392: Don't steal input focus in about:tor search box
@@ -321,7 +382,7 @@
  * Bug 13998: Handle changes in NoScript 2.6.9.8+
  * Bug 14100: Option to hide NetworkSettings menuitem
  * Bug 13079: Option to skip control port verification
- * Bug 13835: Option to change default Tor Browser homepage
+ * Bug 13835: Option to change default JonDoBrowser homepage
  * Bug 11449: Fix new identity error if NoScript is not enabled
  * Bug 13881: Localize strings for tor circuit display
  * Bug 9387: Incorporate user feedback
@@ -377,7 +438,7 @@
 
 1.6.12.2
  22 Sep 2014
- * Bug 13091: Use "Tor Browser" everywhere
+ * Bug 13091: Use "JonDoBrowser" everywhere
 
 1.6.12.1
  1 Sep 2014
@@ -525,7 +586,7 @@
   * bug 5279: Remove old toggle observers and related code
   * bug 3100: Simplify Security Preference UI and associated pref updates
   * bug 1305: Eliminate redundancy in our Flash/plugin disabling code
-  * bug 3944: Leave most preferences under Tor Browser's control 
+  * bug 3944: Leave most preferences under JonDoBrowser's control 
   * bug 7974: Disable toggle-on-startup and crash detection logic
   * bug 5279: Disable/remove toggle-mode code and related observers
   * bug 6431: Add menu hint to Torbutton icon
@@ -622,7 +683,7 @@
   * bug 3101: Disable WebGL. Too many unknowns for now.
   * bug 3345: Make Google Captcha redirect work again.
   * bug 3399: Fix a reversed exception check found by arno.
-  * bug 3177: Update torbutton to use new TorBrowser prefs.
+  * bug 3177: Update torbutton to use new JonDoBrowser prefs.
   * bug 2843: Update proxy preferences window to support env var.
   * bug 2338: Force toggle at startup if tor is enabled
   * bug 3554: Make Cookie protections obey disk settings

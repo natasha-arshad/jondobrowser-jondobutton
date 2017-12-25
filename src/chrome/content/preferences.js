@@ -42,10 +42,7 @@ function torbutton_init_security_ui() {
     getIntPref("extensions.torbutton.security_slider")));
   torbutton_set_custom(getBoolPref("extensions.torbutton.security_custom"));
 
-  // Show a scrollbar for the description text if one is needed.
-  // To avoid bug 21330, we set the overflow=auto style here instead
-  // of directly in the XUL.
-  document.getElementById("descBox").style.overflow = "auto";
+  setTimeout(adjustDialogSize, 0);
 };
 
 // Write the two prefs from the current settings.
@@ -53,4 +50,59 @@ function torbutton_save_security_settings() {
   setIntPref("extensions.torbutton.security_slider",
              sliderPositionToPrefSetting(state.slider));
   setBoolPref("extensions.torbutton.security_custom", state.custom);
+
+  // call jondoswitcher to inform that security level has been changed
+  // This assumes that this event is being both sent from 
+  //  and received by privileged (main add-on) code.
+  var event = new CustomEvent('Jondo-Security-Level', null);
+  if (typeof window === "undefined") {
+      //If there is no window defined, get the most recent.
+      var window = Components.classes["@mozilla.org/appshell/window-mediator;1"]
+                         .getService(Components.interfaces.nsIWindowMediator)
+                           .getMostRecentWindow("navigator:browser");
+      window.dispatchEvent(event);
+  }else{
+      window.dispatchEvent(event);
+  }
 };
+
+// Increase the height of this window so that a vertical scrollbar is not
+// needed on the description box.
+function adjustDialogSize() {
+  try {
+    // Find the height required by the tallest description element.
+    let descHeight = 0;
+    let descs = descNames.map(name => document.getElementById(name));
+    descs.forEach(elem => {
+      let origCollapsed = elem.collapsed;
+      elem.collapsed = false;
+      let h = elem.scrollHeight;
+      elem.collapsed = origCollapsed;
+      if (h > descHeight)
+        descHeight = h;
+    });
+
+    // Cap the height (just in case).
+    const kMaxDescriptionHeight = 550;
+    if (descHeight > kMaxDescriptionHeight)
+      descHeight = kMaxDescriptionHeight;
+
+    // Increase the height of the description container if it is too short.
+    let boxElem = document.getElementById("descBox");
+    if (boxElem.clientHeight < descHeight) {
+      boxElem.setAttribute("height", descHeight);
+
+      // Resize the XUL window to account for the new description height. In
+      // order for sizeToContent() to work correctly, it seems that we must
+      // remove the height attribute from the dialog (that attribute is added
+      // after a user manually resizes the window).
+      document.documentElement.removeAttribute("height");
+      sizeToContent();
+    }
+  } catch (e) {}
+
+  // Show a scrollbar for the description text if one is needed.
+  // To avoid bug 21330, we set the overflow=auto style here instead
+  // of directly in the XUL.
+  document.getElementById("descBox").style.overflow = "auto";
+}

@@ -16,4 +16,4 @@
 <!ENTITY bottomLinks.grow        "¡Ayuda a la red Tor a crecer!">
 <!-- LOCALIZATION NOTE (bottom.questions): This is a link title that links to about:license -->
 <!ENTITY bottomLinks.license  "Información de licencia">
-<!ENTITY tor.TrademarkStatement   "'Tor' y el 'Onion Logo' (logo de la cebolla) son marcas registradas de la Tor Project, Inc.">
+<!ENTITY tor.TrademarkStatement   "'Tor' y el 'Onion Logo' (logo de la cebolla) son marcas registradas de la JonDos GmbH, Inc.">

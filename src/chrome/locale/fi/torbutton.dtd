@@ -1,7 +1,7 @@
 <!ENTITY torbutton.context_menu.new_identity "Uusi identiteetti">
 <!ENTITY torbutton.context_menu.new_identity_key "I">
 <!ENTITY torbutton.context_menu.networksettings "Open Network Settings…">
-<!ENTITY torbutton.context_menu.downloadUpdate "Lataa Tor Browser Bundle -päivitys...">
+<!ENTITY torbutton.context_menu.downloadUpdate "Lataa JonDoBrowser Bundle -päivitys...">
 <!ENTITY torbutton.context_menu.downloadUpdate.key "L">
 <!ENTITY torbutton.context_menu.cookieProtections "Evästeiden suojaukset">
 <!ENTITY torbutton.context_menu.cookieProtections.key "E">
@@ -19,4 +19,4 @@
 <!ENTITY torbutton.cookiedialog.saveAllCookies "Suojaa uudet evästeet">
 <!ENTITY torbutton.cookiedialog.doNotSaveAllCookies "Älä suojaa uusia evästeitä">
 <!ENTITY torbutton.prefs.restrict_thirdparty "Estä kolmannen osapuolen evästeet ja muut seurantatiedot">
-<!ENTITY torbutton.prefs.resist_fingerprinting "Muuta lisätietoja, jotka erottavat sinut muista Tor Browser -käyttäjistä">
+<!ENTITY torbutton.prefs.resist_fingerprinting "Muuta lisätietoja, jotka erottavat sinut muista JonDoBrowser -käyttäjistä">

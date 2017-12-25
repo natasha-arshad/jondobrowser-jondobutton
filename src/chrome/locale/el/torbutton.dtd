@@ -1,7 +1,7 @@
 <!ENTITY torbutton.context_menu.new_identity "Νέα Ταυτότητα">
 <!ENTITY torbutton.context_menu.new_identity_key "Τ">
 <!ENTITY torbutton.context_menu.networksettings "Open Network Settings…">
-<!ENTITY torbutton.context_menu.downloadUpdate "Λυψη του Tor Browser Bundle Update...">
+<!ENTITY torbutton.context_menu.downloadUpdate "Λυψη του JonDoBrowser Bundle Update...">
 <!ENTITY torbutton.context_menu.downloadUpdate.key "U">
 <!ENTITY torbutton.context_menu.cookieProtections "Προστασία Cookies">
 <!ENTITY torbutton.context_menu.cookieProtections.key "C">
@@ -19,4 +19,4 @@
 <!ENTITY torbutton.cookiedialog.saveAllCookies "Προστασία Νέων Cookie">
 <!ENTITY torbutton.cookiedialog.doNotSaveAllCookies "Να Μη γίνεται Προστασία Νέων Cookie">
 <!ENTITY torbutton.prefs.restrict_thirdparty "Περιορισμος των cookies τριτων και αλλων δεδομενων παρακολουθησης">
-<!ENTITY torbutton.prefs.resist_fingerprinting "Αλλάξτε τις λεπτομέρειες που σας διακρίνει από άλλους χρήστες του Tor Browser ">
+<!ENTITY torbutton.prefs.resist_fingerprinting "Αλλάξτε τις λεπτομέρειες που σας διακρίνει από άλλους χρήστες του JonDoBrowser ">

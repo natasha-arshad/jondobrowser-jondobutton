@@ -6,12 +6,12 @@
 <!ENTITY torbutton.context_menu.preferences.key "S">
 <!ENTITY torbutton.context_menu.networksettings "Tor Ağ Ayarları...">
 <!ENTITY torbutton.context_menu.networksettings.key "N">
-<!ENTITY torbutton.context_menu.downloadUpdate "Tor Browser Güncelleme Denetimi...">
+<!ENTITY torbutton.context_menu.downloadUpdate "JonDoBrowser Güncelleme Denetimi...">
 <!ENTITY torbutton.context_menu.downloadUpdate.key "U">
 <!ENTITY torbutton.context_menu.cookieProtections "Çerez Koruması...">
 <!ENTITY torbutton.context_menu.cookieProtections.key "C">
 <!ENTITY torbutton.button.tooltip "Torbutton uygulamasını başlatmak için tıklayın">
-<!ENTITY torbutton.prefs.security_settings "Tor Browser Güvenlik Ayarları">
+<!ENTITY torbutton.prefs.security_settings "JonDoBrowser Güvenlik Ayarları">
 <!ENTITY torbutton.prefs.restore_defaults "Varsayılanlara Sıfırla">
 <!ENTITY torbutton.prefs.custom_warning "Özel tarayıcı tercihleriniz alışılmadık güvenlik ayarları ile sonuçlandı. Güvenlik ve gizlilik nedenleri ile, aşağıdaki varsayılan güvenlik seviyelerinden birini seçmenizi öneriyoruz.">
 <!ENTITY torbutton.cookiedialog.title "Çerez Koruması Yönetimi">
@@ -28,9 +28,9 @@
 <!ENTITY torbutton.prefs.restrict_thirdparty "3. taraf çerez ve diğer iz sürücü bilgiler engellensin">
 <!ENTITY torbutton.prefs.restrict_thirdparty.accesskey "R">
 <!ENTITY torbutton.prefs.restrict_thirdparty_tooltip "Bu seçeneği işaretleyerek, çeşitli web tarayıcıların, web sitelerinde yaptığınız işlemleri izlemesini engelleyebilirsiniz. Değiştirilen özellikler içinde blob İnternet adresleri, yayın kanalları, web tarayıcı ön belleği, çerezler, favicon dosyaları, HTTP Auth başlık bilgileri, ön bağlantı bilgileri, localStorage, mediaSource adresleri, OCSP istekleri, SharedWorkers ve TLS oturumu bulunur.">
-<!ENTITY torbutton.prefs.resist_fingerprinting "Diğer Tor Browser kullanıcılarından sizi ayıran ayrıntılar değiştirilsin">
+<!ENTITY torbutton.prefs.resist_fingerprinting "Diğer JonDoBrowser kullanıcılarından sizi ayıran ayrıntılar değiştirilsin">
 <!ENTITY torbutton.prefs.resist_fingerprinting.accesskey "F">
-<!ENTITY torbutton.prefs.resist_fingerprinting_tooltip "Bu seçeneği işaretleyerek, web sitelerinden pil durumu, bilgisayar performansı, tuş takımı düzeni, yerel ayarlar, yüklü uygulama eklerinin konumu, yüklü uygulama eklerinin listesi, ağ durumunuz, ekran doğrultusu, ekran boyutu, siteye özel yakınlaştırma düzeyi, desteklenen dosya tipleri, sistem renkleri ve WebGL yetenekleri gibi sizin için önemli olabilecek bilgileri gizleyebilirsiniz. ">
+<!ENTITY torbutton.prefs.resist_fingerprinting_tooltip "Bilgisayarınızın başarımı, tuş takımı düzeni, yerel dil ayarları, yüklenmiş eklentilerin konumu, yüklenmiş eklentilerin listesi, ağınızın durumu, ekran yönlendirmesi, ekran boyutu, siteye bağlı özel yakınlaştırma seviyeleri, desteklenen dosya türleri, sistem renkleri ve WebGL yetenekleri gibi size özel olan ve kimliğinizin belirlenmesinde kullanılabilecek bilgileri gizlemek için bu kutuyu işaretlenmiş olarak tutun.">
 <!ENTITY torbutton.prefs.sec_caption "Güvenlik Düzeyi">
 <!ENTITY torbutton.prefs.sec_caption_tooltip "Güvenlik ayarı ile belirli web tarayıcı özeliklerini kapatabilirsiniz. Ancak bu durumda web tarayıcınız saldırılara karşı daha korumasız olur.">
 <!ENTITY torbutton.prefs.sec_low "Düşük (varsayılan)">
@@ -41,12 +41,12 @@
 <!ENTITY torbutton.prefs.sec_html5_desc "HTML5 görüntü ve ses ortamı NoScript aracılığıyla tıklayıp oynat şekline dönüştürülür.">
 <!ENTITY torbutton.prefs.sec_html5_tooltip "Bazı sitelerde bu ortam nesnelerini etkinleştirebilmek için NoScript düğmesinin kullanılması gerekebilir.">
 <!ENTITY torbutton.prefs.sec_some_jit_desc "Bazı JavaScript başarım iyileştirmeleri devre dışı bırakılır.">
-<!ENTITY torbutton.prefs.sec_jit_desc_tooltip "ION JIT, Doğal Düzenli İfade.">
+<!ENTITY torbutton.prefs.sec_jit_desc_tooltip "ION JIT, Doğal Kurallı İfade">
 <!ENTITY torbutton.prefs.sec_baseline_jit_desc_tooltip "Sınır Çizgi JIT.">
 <!ENTITY torbutton.prefs.sec_jit_slower_desc "Bazı sitelerde betikler daha yavaş çalışabilir.">
 <!ENTITY torbutton.prefs.sec_mathml_desc "Matematik denklemlerini görüntüleyen bazı düzenekler devre dışı bırakılır.">
 <!ENTITY torbutton.prefs.sec_mathml_desc_tooltip "MathML devre dışı bırakılır.">
-<!ENTITY torbutton.prefs.sec_medium "Ortam">
+<!ENTITY torbutton.prefs.sec_medium "Orta">
 <!ENTITY torbutton.prefs.sec_all_jit_desc "JavaScript kullanılan web sitelerinde başarım iyileştirmeleri devre dışı bırakılır.">
 <!ENTITY torbutton.prefs.sec_font_rend_desc "Bazı yazı tipi işleme özellikleri devre dışı bırakılır.">
 <!ENTITY torbutton.prefs.sec_font_rend_graphite_tooltip "Graphite yazı tipi görüntüleme düzeneği devre dışı bırakılır.">

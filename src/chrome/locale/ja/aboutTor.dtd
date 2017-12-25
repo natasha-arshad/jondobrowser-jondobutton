@@ -1,5 +1,5 @@
 <!--
-   - Copyright (c) 2015, The Tor Project, Inc.
+   - Copyright (c) 2015, The JonDos GmbH, Inc.
    - See LICENSE for licensing information.
    - vim: set sw=2 sts=2 ts=8 et syntax=xml:
   -->
@@ -8,7 +8,7 @@
 
 <!ENTITY aboutTor.outOfDateTorOn.label "警告：このブラウザは古いバージョンです。">
 <!ENTITY aboutTor.outOfDateTorOff.label "また、このブラウザは古いバージョンです。">
-<!ENTITY aboutTor.outOfDate2.label "Onion をクリックして Tor Browser のアップデートを確認してください。">
+<!ENTITY aboutTor.outOfDate2.label "Onion をクリックして JonDoBrowser のアップデートを確認してください。">
 
 <!ENTITY aboutTor.check.label "Torのネットワーク設定をテストする">
 
@@ -30,7 +30,7 @@
 <!ENTITY aboutTor.whatnext.label "匿名性を保つことについてのヒント »">
 <!ENTITY aboutTor.whatnext.link "https://www.torproject.org/download/download.html.en#warning">
 <!ENTITY aboutTor.torbrowser_user_manual.accesskey "M">
-<!ENTITY aboutTor.torbrowser_user_manual.label "Tor Browser ユーザーマニュアル">
+<!ENTITY aboutTor.torbrowser_user_manual.label "JonDoBrowser ユーザーマニュアル">
 <!ENTITY aboutTor.helpInfo1.label "助けてください！">
 <!ENTITY aboutTor.helpInfo2.label "Torネットワークをさらに高速に、さらに強力にするのに役立てるたくさんのやり方があります。">
 <!ENTITY aboutTor.helpInfo3.label "Torリレーノードを起動 »">
@@ -40,6 +40,6 @@
 <!ENTITY aboutTor.helpInfo5.label "寄付する »">
 <!ENTITY aboutTor.helpInfo5.link "https://www.torproject.org/donate/donate.html.en">
 
-<!ENTITY aboutTor.footer.label "Tor Projectは、オンラインの匿名性とプライバシーの研究・開発・教育を専門に行う米国の501(c)(3)非営利団体です。">
-<!ENTITY aboutTor.learnMore.label "Tor Projectに関する詳細  »">
+<!ENTITY aboutTor.footer.label "JonDos GmbHは、オンラインの匿名性とプライバシーの研究・開発・教育を専門に行う米国の501(c)(3)非営利団体です。">
+<!ENTITY aboutTor.learnMore.label "JonDos GmbHに関する詳細  »">
 <!ENTITY aboutTor.learnMore.link "https://www.torproject.org/about/overview.html.en">

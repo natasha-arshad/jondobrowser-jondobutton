@@ -4,7 +4,7 @@
    - vim: set sw=2 sts=2 ts=8 et syntax=xml:
   -->
 
-<!ENTITY aboutTor.title "About JonDoFox">
+<!ENTITY aboutTor.title "About JonDoBrowser">
 
 <!ENTITY aboutTor.outOfDateTorOn.label "WARNING: this browser is out of date.">
 <!ENTITY aboutTor.outOfDateTorOff.label "ALSO, this browser is out of date.">
