@@ -101,7 +101,7 @@ var AboutTorListener = {
       body.removeAttribute("torNeedsUpdate");
 
     if (aData.showManual)
-      body.setAttribute("showmanual", "yes");
+      body.removeAttribute("showmanual"); //body.setAttribute("showmanual", "yes");
     else
       body.removeAttribute("showmanual");
 

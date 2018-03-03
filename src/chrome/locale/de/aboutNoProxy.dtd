@@ -11,7 +11,7 @@
 <!ENTITY aboutNoProxy.noproxy.label3 "Bitte schalte JonDo für anonyme Suche ein.">
 
 <!ENTITY aboutNoProxy.whatnextQuestion.label "Was nun?">
-<!ENTITY aboutNoProxy.whatnextAnswer.label "JonDo ist NICHT alles was benötigt wird, um anonym zu surfen! Sie müssen eventuell einige Gewohnheiten ändern, um sicherzustellen, dass Ihre Identität geschützt bleibt.">
+<!ENTITY aboutNoProxy.whatnextAnswer.label "JonDoBrowser ist kompatibel mit VPN-Systemen, Proxies, Tor und JonDonym. Für den bestmöglichen Schutz empfehlen wir, das Tor- oder JonDonym-System zu benutzen. Wählen Sie dazu oben unter &quot;Netzwerk auswählen&quot; z.B. das &quot;JonDo-Netzwerk&quot;.">
 <!ENTITY aboutNoProxy.whatnext.label "Tipps, um anonym zu bleiben »">
 <!ENTITY aboutNoProxy.whatnext.link "https://www.anonym-surfen.de/help/index.html">
 <!ENTITY aboutNoProxy.torbrowser_user_manual.accesskey "M">
